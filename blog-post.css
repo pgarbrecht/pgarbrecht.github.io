@@ -21,7 +21,8 @@ p {
   margin-right: 5%;
   margin-left: 5%;
   font-size: 20px;
-  text-indent: 3%
+  text-indent: 3%;
+  line-height: 2;
 }
 
 h1 {
