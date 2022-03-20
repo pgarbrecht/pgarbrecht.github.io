@@ -54,4 +54,22 @@ img {
   margin-right: auto;
 }
 
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+  background: orange;
+  border: none;
+}
+
+button:hover {
+  background: #FBBF77;
+}
+
 </css>
