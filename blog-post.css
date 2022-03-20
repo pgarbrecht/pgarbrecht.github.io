@@ -15,6 +15,10 @@ div.child_hero {
   color: black;
 }
 
+div.byline {
+  font-size: 3vw;
+}
+
 p {
   margin-top: 1%;
   margin-bottom: 1%;
@@ -22,7 +26,7 @@ p {
   margin-left: 5%;
   font-size: 20px;
   text-indent: 3%;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 h1 {
@@ -37,6 +41,14 @@ h2 {
   margin-right: 5%;
   margin-left: 5%;
   font-size: 30px;
+}
+
+h2 span {
+  background-color: #8AB1FF;
+}
+
+img {
+	border: 3px solid black;
 }
 
 </css>
