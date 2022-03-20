@@ -64,6 +64,7 @@ button {
   font-size: 2vw;
   font-weight: bold;
   padding: 0 20px;
+  color: black;
   background: orange;
   border: none;
 }
