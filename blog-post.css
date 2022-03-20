@@ -68,8 +68,25 @@ button {
   border: none;
 }
 
+button:link {
+  text-decoration: none;
+}
+
+button:visited {
+  text-decoration: none;
+}
+
 button:hover {
   background: #FBBF77;
+  text-decoration: none;
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:active {
+  text-decoration: none;
 }
 
 </css>
