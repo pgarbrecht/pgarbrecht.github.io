@@ -1,13 +1,67 @@
 <html>
 
 <head>
-  <title>Phil Garbrecht's Github Website</title>
+<title>Phil Garbrecht's Website</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
 
+<header>
+  <div class = "header-name">Phil Garbrecht</div>
+<nav>
+    <div class="dropdown">  
+        <button onclick="show_hide()" class="button">View Portfolio</button>  
+         <center>  
+            <!-- dropdown list items will show when we click the drop button -->   
+            <div id="list-items">  
+               <a href="https://codepen.io/PGarbrecht/pen/zYRYKaM">Restaurant menu</a>  
+               <a href="https://codepen.io/PGarbrecht/pen/jOZOVYQ">Login page</a>  
+               <a href="https://codepen.io/PGarbrecht/pen/BaYovNq">Password checker</a>  
+            </div>  
+         </center>  
+</nav>
+</header>  
+
 <body>
-  <h1>Phil Garbrecht's Github Website</h1>
-  <p>Welcome! This is the homepage for my Github website. Here you can find webpages I have made and published through Github.</p>
-  <p><a href="https://pgarbrecht.github.io/blog-post.html>Blog Post</a></p>
-  </body>
+  <div class = "hero">
+    <img src="https://i.ibb.co/d2XhJSf/phil-garbrecht-square-headshot.png" class = "phil-image" alt="Image of Phil Garbrecht">
+    <div class = "welcome">
+    <h1>Welcome to my site &nbsp;</h1> 
+    <img class="hand" src="https://cdn.jsdelivr.net/npm/twemoji@11.0.1/2/svg/1f44b.svg"
+  /> 
+    </div>    
+  </div>
+    
+  <div class = "about-container">
+    <div class = "about-info">
+    <h2>About me</h2>
+    <p class ="about-paragraph">Hello world! My name is Phil and I'm an aspiring software engineer. I started coding in my digital marketing job and fell in love with it. As the manager for our company's website, I am lucky to work on many web development projects and collaborate with a team of developers. After work, I've been taking classes at <a href="https://generalassemb.ly/">General Assembly</a> to improve my skills and learn more programming languages. What I enjoy most about coding is being able to work with others to make applications that are helpful to people. Thank you for taking the time to learn more about me, I hope that you enjoy looking around!</p>
+    </div>
+    <div class = "languages">
+    <h2>Languages</h2>
+    <ul class="language-list">
+     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class = "language-icon"/>
+        HTML</li>
+     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class = "language-icon"/>
+        CSS</li>
+     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class = "language-icon"/>
+        Javascript</li>
+     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class = "language-icon"/>
+        Python</li>
+     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class = "language-icon"/>
+        Java</li>
+    </ul>
+    </div>
+  </div>
+</body>
+
+  
+<footer>
+  <ul class = "footer-content">
+    <li>Copyright © Phil Garbrecht <script>document.write(new Date().getFullYear())</script></li>
+    <li><a href="https://www.linkedin.com/in/philgarbrecht/">Connect on LinkedIn</a></li>
+  </ul>
+</footer>
   
 </html>
