@@ -1,0 +1,70 @@
+body {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 20%;
+  grid-template-columns: 33% 33% 33%;
+}
+.grid-item-1, .grid-item-2, .grid-item-3 {
+  padding: 20px;
+}
+
+.grid-item-1 {
+  background-color: #5874DC;
+}
+
+.grid-item-2 {
+  background-color: gray;
+}
+
+#result-highlight {
+  background-color: yellow;
+}
+
+.grid-item-3 {
+  background-color: #E06C78;
+}
+
+#rock, #paper, #scissors {
+width: 75px;
+height: 75px;
+border-radius: 7px;
+}
+
+#rock {
+  background-image: url("https://i.imgur.com/7wafHBN.png");
+  background-size: 100%;
+  border: none;
+}
+
+#paper {
+  background-image: url("https://i.imgur.com/syul1t6.png");
+  background-size: 100%;
+  border: none;
+}
+
+#scissors {
+  background-image: url("https://i.imgur.com/J1UZHgo.png");
+  background-size: 100%;
+  border: none;
+}
+
+#my-choice-image, #computer-choice-image {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+  grid-template-columns: repeat(1,1fr);
+  }
+  
+  #my-choice-image, #computer-choice-image {
+  width: 20%;
+}
+  
+}
