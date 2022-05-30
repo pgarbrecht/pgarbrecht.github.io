@@ -1,2 +1,2 @@
 # pgarbrecht.github.io
-Here you can access some of my web development projects.
+My main portfolio repository with samples of my work.
