@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(215, 241, 204);
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 15px;
+    width: 100%;
+}
+
+.player-controls, .player-status {
+    border: solid black 2px;
+    width: 50%;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.player-controls-cut, .player-controls-buy {
+    height: 100%;
+}
+
+.player-controls-buy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap 1;
+}
+
+.player-status {
+    color: white;
+    text-align: center;
+    background-color: rgb(65, 138, 98);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.win-image {
+    width: 100%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .player-controls, .player-status {
+        border: solid black 2px;
+        width: 100%;
+    }
+    .player-controls-cut, .player-controls-buy {
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 12px;
+    }
+    .player-controls-cut, .player-controls-buy {
+        height: 80px;
+    }
+}
