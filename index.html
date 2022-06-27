@@ -1,67 +1,108 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title>Phil Garbrecht's Website</title>
-<link href="index.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="index.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phil Garbrecht's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 
-<header>
-  <div class = "header-name">Phil Garbrecht</div>
-<nav>
-    <div class="dropdown">  
-        <button onclick="show_hide()" class="button">View Portfolio</button>  
-         <center>  
-            <!-- dropdown list items will show when we click the drop button -->   
-            <div id="list-items">  
-               <a href="https://codepen.io/PGarbrecht/pen/zYRYKaM">Restaurant Menu</a>  
-               <a href="https://codepen.io/PGarbrecht/pen/jOZOVYQ">Login Page</a>  
-               <a href="https://codepen.io/PGarbrecht/pen/zYRKmYx">Rock, Paper, Scissors</a>  
-            </div>  
-         </center>  
-</nav>
-</header>  
-
 <body>
-  <div class = "hero">
-    <img src="https://i.ibb.co/d2XhJSf/phil-garbrecht-square-headshot.png" class = "phil-image" alt="Image of Phil Garbrecht">
-    <div class = "welcome">
-    <h1>Welcome to my site &nbsp;</h1> 
-    <img class="hand" src="https://cdn.jsdelivr.net/npm/twemoji@11.0.1/2/svg/1f44b.svg"
-  /> 
-    </div>    
-  </div>
-    
-  <div class = "about-container">
-    <div class = "about-info">
-    <h2>About me</h2>
-    <p class ="about-paragraph">Hello world! My name is Phil and I'm an aspiring software engineer. I started coding in my digital marketing job and fell in love with it. As the manager for our company's website, I am lucky to work on many web development projects and collaborate with a team of developers. After work, I've been taking classes at <a href="https://generalassemb.ly/">General Assembly</a> to improve my skills and learn more programming languages. What I enjoy most about coding is being able to work with others to make applications that are helpful to people. Thank you for taking the time to learn more about me, I hope that you enjoy looking around!</p>
+    <div class="book-buttons-flexbox">
+        <!-- Book -->
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="front-cover-page" class="front-content">
+                        <h1>Phil Garbrecht's Portfolio</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="about-page" class="back-content">
+                        <i class="fa-solid fa-address-card"></i>&nbsp;<h2 class="about-title">About</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="skills-page" class="front-content">
+                        <i class="fa-solid fa-address-card"></i>&nbsp;<h2 class="skills-title">About</h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="work-page" class="back-content">
+                        <i class="fa-solid fa-square-poll-vertical"></i>&nbsp;
+                        <h2 class="work-title">Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="connect-page" class="front-content">
+                        <i class="fa-solid fa-square-poll-vertical"></i>&nbsp;
+                        <h2 class="connect-title">Skills</h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="work-page" class="back-content">
+                        <i class="fa-solid fa-laptop-code"></i>&nbsp;<h2 class="work-title">Work</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 4 -->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="connect-page" class="front-content">
+                        <i class="fa-solid fa-laptop-code"></i>&nbsp;
+                        <h2 class="work-title">Work</h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="connect-page" class="back-content">
+                        <i class="fa-solid fa-square-envelope"></i>&nbsp;<h2 class="connect-title">Connect</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 5 -->
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="connect-page" class="front-content">
+                        <i class="fa-solid fa-square-envelope"></i>&nbsp;
+                        <h2 class="connect-title">Connect</h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="back-cover-page" class="back-content">
+                        <h2 class="back-cover-message">Happy coding!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons-->
+        <div class="button-box">
+            <button id="prev-btn">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button>
+            <button id="next-btn">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+            <i class="fa-solid fa-address-card" id="about-bookmark"></i>
+            <i class="fa-solid fa-square-poll-vertical" id="skills-bookmark"></i>
+            <i class="fa-solid fa-laptop-code" id="work-bookmark"></i>
+            <i class="fa-solid fa-square-envelope" id="connect-bookmark"></i>
+        </div>
     </div>
-    <div class = "languages">
-    <h2>Languages</h2>
-    <ul class="language-list">
-     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class = "language-icon"/>
-        HTML</li>
-     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class = "language-icon"/>
-        CSS</li>
-     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class = "language-icon"/>
-        Javascript</li>
-     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class = "language-icon"/>
-        Python</li>
-     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class = "language-icon"/>
-        Java</li>
-    </ul>
-    </div>
-  </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/00041a9ee8.js" crossorigin="anonymous"></script>
 </body>
 
-  
-<footer>
-  <ul class = "footer-content">
-    <li>Copyright © Phil Garbrecht <script>document.write(new Date().getFullYear())</script></li>
-    <li><a href="https://www.linkedin.com/in/philgarbrecht/">Connect on LinkedIn</a></li>
-  </ul>
-</footer>
-  
 </html>
