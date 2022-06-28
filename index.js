@@ -14,9 +14,6 @@ const skillsBookmark = document.querySelector("#skills-bookmark");
 const workBookmark = document.querySelector("#work-bookmark");
 const connectBookmark = document.querySelector("#connect-bookmark");
 
-//check if mobile dimensions
-let mobile = window.matchMedia("(max-width: 600px)");
-
 // Event listeners for button or bookmark clicks
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
@@ -32,10 +29,10 @@ let maxLocation = numOfPapers + 1;
 
 function openBook() {
     if(mobile.matches){
-    book.style.transform = "translateX(50%)";
+    book.style.transform = "translateX(0%)";
     }
     else {
-        book.style.transform = "translateX(0%)"; 
+        book.style.transform = "translateX(50%)"; 
     }
 }
 
@@ -285,3 +282,7 @@ function goConnectPage() {
         currentLocation = 5;
     }
 }
+
+//mobile stuff
+let mobile = window.matchMedia("(max-width: 600px)");
+window.addEventListener('resize', openBook);
