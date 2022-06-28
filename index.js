@@ -107,7 +107,7 @@ function goPrevPage() {
         currentLocation--;
     }
 }
-//NOTE:REMOVE "FLIPPED" FOR MOBILE TO KEEP IT VIEWABLE ON ONE CARD
+
 //Bookmark click navigation logic
 function goAboutPage() { 
     if(currentLocation >= 1) {
@@ -283,6 +283,6 @@ function goConnectPage() {
     }
 }
 
-//mobile stuff
+//Recognizing when user is on mobile in order to not move book in openBook function
 let mobile = window.matchMedia("(max-width: 600px)");
 window.addEventListener('resize', openBook);
