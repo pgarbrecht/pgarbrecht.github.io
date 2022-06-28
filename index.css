@@ -52,7 +52,8 @@ body {
 
 .front {
     z-index: 1;
-    backface-visibility: hidden;
+    /*added webkit prefix here to test if works for safari and ios*/
+    -webkit-backface-visibility: hidden;
     border-left: 1px solid #683D2C;
 }
 
