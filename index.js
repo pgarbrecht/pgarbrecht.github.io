@@ -277,22 +277,3 @@ function goConnectPage() {
         currentLocation = 5;
     }
 }
-
-//Logic to highlight icon for current page
-function showCurrentPage() {
-    if(currentLocation >= 1) {
-        switch(currentLocation) {
-            case 1: 
-                break;
-            case 2:
-                aboutBookmark.style.color = "white";
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            default:
-                throw new Error("unknown state");
-        }
-    }
-}
