@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*added to support ios and safari*/
-    -webkit-backface-visibility: hidden;
 }
 
 body {
@@ -50,20 +48,12 @@ body {
     left: 0;
     transform-origin: left;
     transition: transform 0.75s;
-    /*added to support safari and ios*/
-    transform: rotateX(0deg);
 }
 
 .front {
     z-index: 1;
-    border-left: 1px solid #683D2C;
     backface-visibility: hidden;
-    /*added code below to support safari and ios*/
-    -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    visibility:visible;
-    opacity: 0.99;
+    border-left: 1px solid #683D2C;
 }
 
 .back {
@@ -78,7 +68,7 @@ body {
 }
 
 .back-content {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 h1 {
@@ -190,7 +180,7 @@ button:focus {
 /*mobile styling*/
 @media only screen and (max-width: 600px) {
     .book {
-        width: 49vw;
+        width: 90vw;
     }
     .front {
         height: 99.9%; /*To fix a misalignment issue - do not delete*/
@@ -207,3 +197,4 @@ button:focus {
         padding: 0px 10px 0px 10px;
     }
   }
+
