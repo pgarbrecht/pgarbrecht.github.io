@@ -198,5 +198,6 @@ button:focus {
     }
     * {
         backface-visibility: hidden;
+        /*Hides back content for mobile*/
     }
   }
