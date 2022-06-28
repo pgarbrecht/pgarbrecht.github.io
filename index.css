@@ -48,6 +48,8 @@ body {
     left: 0;
     transform-origin: left;
     transition: transform 0.75s;
+    /*added to support safari and ios*/
+    transform: rotateX(0deg);
 }
 
 .front {
@@ -74,7 +76,7 @@ body {
 }
 
 .back-content {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 h1 {
