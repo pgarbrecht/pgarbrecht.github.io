@@ -14,6 +14,9 @@ const skillsBookmark = document.querySelector("#skills-bookmark");
 const workBookmark = document.querySelector("#work-bookmark");
 const connectBookmark = document.querySelector("#connect-bookmark");
 
+//check if mobile dimensions
+let mobile = window.matchMedia("(max-width: 600px)");
+
 // Event listeners for button or bookmark clicks
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
@@ -28,7 +31,12 @@ let numOfPapers = 5;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
+    if(mobile.matches){
     book.style.transform = "translateX(50%)";
+    }
+    else {
+        book.style.transform = "translateX(0%)"; 
+    }
 }
 
 function closeBook(isAtBeginning) {
