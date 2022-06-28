@@ -52,9 +52,13 @@ body {
 
 .front {
     z-index: 1;
-    /*added webkit prefix here to test if works for safari and ios*/
-    -webkit-backface-visibility: hidden;
     border-left: 1px solid #683D2C;
+    backface-visibility: hidden;
+    /*added code below to support safari and ios*/
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    visibility:visible;
 }
 
 .back {
