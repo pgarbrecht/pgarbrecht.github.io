@@ -1,4 +1,4 @@
-// References to DOM elements
+//References to DOM elements
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
 const book = document.querySelector("#book");
@@ -14,7 +14,10 @@ const skillsBookmark = document.querySelector("#skills-bookmark");
 const workBookmark = document.querySelector("#work-bookmark");
 const connectBookmark = document.querySelector("#connect-bookmark");
 
-// Event listeners for button or bookmark clicks
+//Recognizing when user is on mobile in order to not move book in openBook function. 
+let mobile = window.matchMedia("(max-width: 600px)");
+
+//Event listeners for button or bookmark clicks
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 aboutBookmark.addEventListener("click", goAboutPage);
@@ -22,11 +25,12 @@ skillsBookmark.addEventListener("click", goSkillsPage);
 workBookmark.addEventListener("click", goWorkPage);
 connectBookmark.addEventListener("click", goConnectPage);
 
-// Button click navigation logic
+//Keeping track of page location
 let currentLocation = 1;
 let numOfPapers = 5;
 let maxLocation = numOfPapers + 1;
 
+//Open book on desktop moves it sideways to fit two pages, mobile stays centered on one page
 function openBook() {
     if(mobile.matches){
     book.style.transform = "translateX(0%)";
@@ -36,13 +40,16 @@ function openBook() {
     }
 }
 
+//Close book on desktop moves it back to center, mobile already on center so no move
 function closeBook(isAtBeginning) {
-    if(isAtBeginning) {
+    if(isAtBeginning || mobile.matches) {
         book.style.transform = "translateX(0%)";
     } else {
         book.style.transform = "translateX(100%)";
     }
 }
+
+//Note: position of book after open/close may not be as expected if you switch between desktop and dev tools mobile view during session. Actual mobile or desktop users won't switch between those dimensions and will have a consistent experience.
 
 function goNextPage() {
     if(currentLocation < maxLocation) {
@@ -282,7 +289,3 @@ function goConnectPage() {
         currentLocation = 5;
     }
 }
-
-//Recognizing when user is on mobile in order to not move book in openBook function
-let mobile = window.matchMedia("(max-width: 600px)");
-window.addEventListener('resize', openBook);
