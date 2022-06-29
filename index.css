@@ -52,13 +52,13 @@ body {
 
 .front {
     z-index: 1;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* -webkit needed for <5% of browser users as of 06/22, backface-visibility is in all new versions so won't matter when people update*/
     border-left: 1px solid #683D2C;
 }
 
 .back {
     z-index: 0;
-    height: 99.9%; /*To fix a misalignment issue - do not delete*/
+    height: 100%; /*To fix a misalignment issue - do not delete*/
 }
 
 .front-content,
@@ -181,9 +181,10 @@ button:focus {
 @media only screen and (max-width: 600px) {
     .book {
         width: 90vw;
+        height: 65vh;
     }
     .front {
-        height: 99.9%; /*To fix a misalignment issue - do not delete*/
+        height: 100%; /*To fix a misalignment issue - do not delete*/
     }
     h1 {
         font-size: 22px;
@@ -196,8 +197,11 @@ button:focus {
         flex-wrap: wrap;
         padding: 0px 10px 0px 10px;
     }
+    .button-box i {
+        font-size: 30px;
+    }
     * {
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         /*Hides back content for mobile*/
     }
   }
