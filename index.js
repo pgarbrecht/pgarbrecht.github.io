@@ -289,3 +289,6 @@ function goConnectPage() {
         currentLocation = 5;
     }
 }
+
+//Note for those checking out my code in dev tools
+console.log("Hi there! Thank you for checking out my code! Note that this portfolio offers a different experience for mobile and desktop users. Mobile shows one page for each chapter to give people the quick details, while desktop has two pages with more info. If you switch between desktop or mobile views in dev tools, the placement of the portfolio may differ as this was not the intended use case. If so, simply use the buttons to navigate to the start or end of the book and the placement will realign. Happy coding! ~Phil");
