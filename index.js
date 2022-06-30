@@ -301,6 +301,9 @@ function centerBook() {
             book.style.transform = "translateX(50%)";
         }
     }
+    else if ((currentLocation = maxLocation) && !mobile.matches) {
+        book.style.transform = "translateX(100%)";
+    }
 }
 
 //Note for those checking out my code in dev tools
