@@ -290,7 +290,6 @@ function goConnectPage() {
     }
 }
 
-
 //This code is written for the edge case of devs who may inspect a mobile version in dev tools. Switching from desktop to mobile view would otherwise mess with the placement, but this re-centers the book after such an action.
 window.onresize = centerBook;
 function centerBook() {
