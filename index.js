@@ -15,7 +15,7 @@ const workBookmark = document.querySelector("#work-bookmark");
 const connectBookmark = document.querySelector("#connect-bookmark");
 
 //Recognizing when user is on mobile in order to not move book in openBook function. 
-let mobile = window.matchMedia("(max-width: 600px)");
+let mobile = window.matchMedia("(max-width: 480px)");
 
 //Event listeners for button or bookmark clicks
 prevBtn.addEventListener("click", goPrevPage);
