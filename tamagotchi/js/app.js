@@ -1,4 +1,3 @@
-
 //Defining common elements used
 const tamagotchiArea = document.querySelector(".tamagotchi-area");
 const tamagotchiPicture = document.querySelector(".tamagotchi-picture");
@@ -16,7 +15,7 @@ class TamagotchiObject {
     checkMood() {
         if (this.wellness < 10) {
             tamagotchiPicture.src = "imgs/sad.png";
-            tip.innerText = "Oh no! Your tamagatchi isn't doing so well. Increase it's wellness by feeding, playing, or napping.";
+            tip.innerText = "Oh no! Your tamagatchi is almost a tama-gone-chi!";
         }
         else if ((this.wellness >= 10) && (this.wellness < 20)) {
             tamagotchiPicture.src = "imgs/neutral.png";
@@ -33,9 +32,7 @@ class TamagotchiObject {
         const excitement = document.querySelector(".excitement");
         const energy = document.querySelector(".energy");
         const age = document.querySelector(".age");
-        // if(this.wellness >= 0) {
         wellness.innerHTML = `Wellness: ${this.fullness + this.excitement + this.energy}/30`;
-        // }
         if(this.fullness >= 0) {
         fullness.innerHTML = `Fullness: ${this.fullness}/10`;
         }
@@ -51,16 +48,14 @@ class TamagotchiObject {
         this.wellness = this.fullness + this.excitement + this.energy;
     }
     giveName() {
-        if(tamagotchiPicture.id == "hatched") {
         let customName = document.querySelector(".title");
         let namePrompt = prompt("What name would you like to give your Tamagotchi?")
             if (namePrompt != null) {
                 customName.innerHTML = `My Tamagotchi: ${namePrompt}`;
             }
-        }
     }
     feed() {
-        if(tamagotchiPicture.id == "hatched" && this.fullness < 10) {
+        if(tamagotchiPicture.id == "hatched" && this.fullness < 10 && this.wellness > 0) {
         this.fullness += 1;
         this.updateWellness();
         this.displayScore();
@@ -68,7 +63,7 @@ class TamagotchiObject {
         }
     }
     play() {
-        if(tamagotchiPicture.id == "hatched" && this.excitement < 10) {
+        if(tamagotchiPicture.id == "hatched" && this.excitement < 10 && this.wellness > 0) {
             this.excitement += 1;
             this.updateWellness();
             this.displayScore();
@@ -76,7 +71,7 @@ class TamagotchiObject {
             }
     }
     nap() {
-        if(tamagotchiPicture.id == "hatched" && this.energy < 10) {
+        if(tamagotchiPicture.id == "hatched" && this.energy < 10 && this.wellness > 0) {
             this.energy += 1;
             this.updateWellness();
             this.displayScore();
@@ -98,9 +93,12 @@ const tamagotchi = new TamagotchiObject();
 //When egg clicked, will show tomagatchi image, new tip appears, start timers
 tamagotchiPicture.addEventListener("click", hatch);
 
+//this timer is initial value for decreasing fullness, excitement, and energy values
+let timer = 20000
+
     function hatch() {
         tamagotchiPicture.src = "imgs/neutral.png";
-        tip.innerText = "Ta da! Now interact with your tamagotchi to keep its wellness above 0 or it will be a tama-gone-chi.";
+        tip.innerText = "Ta da! Now keep the tamagachi alive with the controls below. The more it ages, the harder it gets.";
         tamagotchiPicture.setAttribute("id","hatched");
         tamagotchi.displayScore();
         //increases age every 20 seconds if not dead
@@ -110,8 +108,8 @@ tamagotchiPicture.addEventListener("click", hatch);
             tamagotchi.displayScore()
             }
         }, 10000);
-        //reduces fullness, excitement, energy by 1 every 10 seconds if not at 0
-        setInterval(function () {
+        //reduces fullness, excitement, energy by 1 at increasingly faster interval
+        decreaseInterval = setInterval(function decreaser () {
             if(tamagotchi.fullness > 0) {
             tamagotchi.fullness -= 1;
             }
@@ -125,7 +123,10 @@ tamagotchiPicture.addEventListener("click", hatch);
             tamagotchi.updateWellness(); 
             tamagotchi.checkMood();
             tamagotchi.die()
-        }, 5000);
+            timer = 20000/tamagotchi.age;
+            clearInterval(decreaseInterval);
+            myInterval = setInterval(decreaser,timer)
+        }, timer);
     }
 
 //Event listeners for control clicks
@@ -145,7 +146,3 @@ document.querySelector(".nap-control").addEventListener("click", (e) =>{
 function playAgain() {
     location.reload();
 }
-
-//super bonus ideas:
-//Add visual animation for feed, play, and nap
-//once hit 30, show rounds +1, message values will decrease faster, and start decreasing faster, --goal to see how many rounds you can last
