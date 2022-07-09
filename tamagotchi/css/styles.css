@@ -71,7 +71,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items:flex-end;
-    background-image: url("/imgs/bg.png");
+    background-image: url("../imgs/bg.png");
     background-size:cover;
     border-radius: 25px;
 }
