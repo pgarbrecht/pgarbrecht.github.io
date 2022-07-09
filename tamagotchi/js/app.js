@@ -143,7 +143,7 @@ document.querySelector(".nap-control").addEventListener("click", (e) =>{
 });
 
 function playAgain() {
-    location.reload;
+    location.reload();
 }
 
 //super bonus ideas:
