@@ -55,8 +55,8 @@ button:hover {
 }
 
 #play-again-btn {
-    width: 100px;
-    height: 20px;
+    width: initial;
+    height: initial;
     border-radius: 10px;
 }
 
