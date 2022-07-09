@@ -15,7 +15,7 @@ class TamagotchiObject {
     checkMood() {
         if (this.wellness < 10) {
             tamagotchiPicture.src = "imgs/sad.png";
-            tip.innerText = "Oh no! Your tamagatchi is almost a tama-gone-chi!";
+            tip.innerText = "Oh no! Your tamagotchi is almost a tama-gone-chi!";
         }
         else if ((this.wellness >= 10) && (this.wellness < 20)) {
             tamagotchiPicture.src = "imgs/neutral.png";
@@ -23,7 +23,7 @@ class TamagotchiObject {
         }
         else if ((this.wellness >= 20) && (this.wellness <= 30)) {
             tamagotchiPicture.src = "imgs/happy.png"
-            tip.innerText = "Woohoo! Your tamagatchi is happier than a cat in a seafood restaurant. Keep it up!";
+            tip.innerText = "Woohoo! Your tamagotchi is happier than a cat in a seafood restaurant. Keep it up!";
         }
     }
     displayScore() {
@@ -49,7 +49,7 @@ class TamagotchiObject {
     }
     giveName() {
         let customName = document.querySelector(".title");
-        let namePrompt = prompt("What name would you like to give your Tamagotchi?")
+        let namePrompt = prompt("What name would you like to give your tamagotchi?")
             if (namePrompt != null) {
                 customName.innerHTML = `My Tamagotchi: ${namePrompt}`;
             }
@@ -98,7 +98,7 @@ let timer = 20000
 
     function hatch() {
         tamagotchiPicture.src = "imgs/neutral.png";
-        tip.innerText = "Ta da! Now keep the tamagachi alive with the controls below. The more it ages, the harder it gets.";
+        tip.innerText = "Ta da! Now keep the tamagotchi alive with the controls below. The more it ages, the harder it gets.";
         tamagotchiPicture.setAttribute("id","hatched");
         tamagotchi.displayScore();
         //increases age every 20 seconds if not dead
