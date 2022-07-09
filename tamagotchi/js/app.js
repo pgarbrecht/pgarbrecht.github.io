@@ -15,15 +15,15 @@ class TamagotchiObject {
     }
     checkMood() {
         if (this.wellness < 10) {
-            tamagotchiPicture.src = "/imgs/sad.png";
+            tamagotchiPicture.src = "imgs/sad.png";
             tip.innerText = "Oh no! Your tamagatchi isn't doing so well. Increase it's wellness by feeding, playing, or napping.";
         }
         else if ((this.wellness >= 10) && (this.wellness < 20)) {
-            tamagotchiPicture.src = "/imgs/neutral.png";
+            tamagotchiPicture.src = "imgs/neutral.png";
             tip.innerText = "Your tamagotchi is medium-well — don't make any mis-steaks now!";
         }
         else if ((this.wellness >= 20) && (this.wellness <= 30)) {
-            tamagotchiPicture.src = "/imgs/happy.png"
+            tamagotchiPicture.src = "imgs/happy.png"
             tip.innerText = "Woohoo! Your tamagatchi is happier than a cat in a seafood restaurant. Keep it up!";
         }
     }
@@ -86,7 +86,7 @@ class TamagotchiObject {
     die() {
         if(tamagotchiPicture.id == "hatched" && this.wellness < 1) {
             tip.innerHTML = '<p>Alas, your little tamagotchi has gone to a better place...&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again!</button>';
-            tamagotchiPicture.src = "/imgs/dead.png";
+            tamagotchiPicture.src = "imgs/dead.png";
             /* stop moving tombstone up and down*/
             tamagotchiPicture.style.animation = "null";
         }
@@ -99,7 +99,7 @@ const tamagotchi = new TamagotchiObject();
 tamagotchiPicture.addEventListener("click", hatch);
 
     function hatch() {
-        tamagotchiPicture.src = "/imgs/neutral.png";
+        tamagotchiPicture.src = "imgs/neutral.png";
         tip.innerText = "Ta da! Now interact with your tamagotchi to keep its wellness above 0 or it will be a tama-gone-chi.";
         tamagotchiPicture.setAttribute("id","hatched");
         tamagotchi.displayScore();
