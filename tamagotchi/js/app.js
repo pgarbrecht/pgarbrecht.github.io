@@ -109,7 +109,7 @@ tamagotchiPicture.addEventListener("click", hatch);
             tamagotchi.age += 1;
             tamagotchi.displayScore()
             }
-        }, 2000);
+        }, 20000);
         //reduces fullness, excitement, energy by 1 every 10 seconds if not at 0
         setInterval(function () {
             if(tamagotchi.fullness > 0) {
@@ -125,7 +125,7 @@ tamagotchiPicture.addEventListener("click", hatch);
             tamagotchi.updateWellness(); 
             tamagotchi.checkMood();
             tamagotchi.die()
-        }, 1000);
+        }, 10000);
     }
 
 //Event listeners for control clicks
