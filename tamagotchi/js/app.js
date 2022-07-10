@@ -97,36 +97,38 @@ tamagotchiPicture.addEventListener("click", hatch);
 let timer = 20000
 
     function hatch() {
-        tamagotchiPicture.src = "imgs/neutral.png";
-        tip.innerText = "Ta da! Now keep the tamagotchi alive with the controls below. The more it ages, the harder it gets.";
-        tamagotchiPicture.setAttribute("id","hatched");
-        tamagotchi.displayScore();
-        //increases age every 20 seconds if not dead
-        setInterval(function () {
-            if(tamagotchi.wellness > 0) {
-            tamagotchi.age += 1;
-            tamagotchi.displayScore()
-            }
-        }, 10000);
-        //reduces fullness, excitement, energy by 1 at increasingly faster interval
-        decreaseInterval = setInterval(function decreaser () {
-            if(tamagotchi.fullness > 0) {
-            tamagotchi.fullness -= 1;
-            }
-            if(tamagotchi.excitement > 0) {
-            tamagotchi.excitement -= 1;
-            }
-            if(tamagotchi.energy > 0) {
-            tamagotchi.energy -= 1;
-            }
+        if(tamagotchiPicture.id != "hatched") {
+            tamagotchiPicture.src = "imgs/neutral.png";
+            tip.innerText = "Ta da! Now keep the tamagotchi alive with the controls below. The more it ages, the harder it gets.";
+            tamagotchiPicture.setAttribute("id","hatched");
             tamagotchi.displayScore();
-            tamagotchi.updateWellness(); 
-            tamagotchi.checkMood();
-            tamagotchi.die()
-            timer = 20000/tamagotchi.age;
-            clearInterval(decreaseInterval);
-            myInterval = setInterval(decreaser,timer)
-        }, timer);
+            //increases age every 20 seconds if not dead
+            setInterval(function () {
+                if(tamagotchi.wellness > 0) {
+                tamagotchi.age += 1;
+                tamagotchi.displayScore()
+                }
+            }, 10000);
+            //reduces fullness, excitement, energy by 1 at increasingly faster interval
+            decreaseInterval = setInterval(function decreaser () {
+                if(tamagotchi.fullness > 0) {
+                tamagotchi.fullness -= 1;
+                }
+                if(tamagotchi.excitement > 0) {
+                tamagotchi.excitement -= 1;
+                }
+                if(tamagotchi.energy > 0) {
+                tamagotchi.energy -= 1;
+                }
+                tamagotchi.displayScore();
+                tamagotchi.updateWellness(); 
+                tamagotchi.checkMood();
+                tamagotchi.die()
+                timer = 20000/tamagotchi.age;
+                clearInterval(decreaseInterval);
+                myInterval = setInterval(decreaser,timer)
+            }, timer);
+        }
     }
 
 //Event listeners for control clicks
