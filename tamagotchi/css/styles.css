@@ -54,6 +54,7 @@ button {
     height: 75px;
     width: 75px;
     border-radius: 75px;
+    border: solid 2px black;
 }
 
 button:hover {
@@ -127,5 +128,8 @@ button:hover {
     }
     .controls {
         margin-top: 15px;
+    }
+    .tamagotchi-picture {
+        width: 150px;
     }
   }
