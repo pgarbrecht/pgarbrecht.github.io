@@ -141,6 +141,9 @@ button:hover {
     .controls {
         margin-top: 15px;
     }
+    .feed-control, .play-control, .nap-control {
+    font-size: 15px;
+    }
     .tamagotchi-picture {
         width: 150px;
     }
