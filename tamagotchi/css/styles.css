@@ -52,6 +52,7 @@ h3 {
 
 .feed-control, .play-control, .nap-control {
     font-size: 20px;
+    text-align: center;
 }
 
 button {
