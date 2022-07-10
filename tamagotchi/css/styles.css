@@ -55,6 +55,7 @@ button {
     width: 75px;
     border-radius: 75px;
     border: solid 2px black;
+    color: black;
 }
 
 button:hover {
@@ -117,6 +118,12 @@ button:hover {
 
   /*Mobile version*/
   @media only screen and (max-width: 700px) {
+    .title {
+        margin-bottom: 0px;
+    }
+    .name-control {
+        margin-top: 20px;
+    }
     .tamagotchi-area {
         width: 75vw;
         height: 25vh;
@@ -131,5 +138,9 @@ button:hover {
     }
     .tamagotchi-picture {
         width: 150px;
+    }
+    @-webkit-keyframes jump {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(13px); }
     }
   }
