@@ -27,16 +27,16 @@ const gohanChoice = document.querySelector("#gohan");
 const trunksChoice = document.querySelector("#trunks");
 
 gokuChoice.onclick = function() {
-    createPlayer("Goku",["../imgs/goku/neutral.png","../imgs/goku/attack.png","../imgs/goku/fallen.png"]);
+    createPlayer("Goku",["dbz/imgs/goku/neutral.png","dbz/imgs/goku/attack.png","dbz/imgs/goku/fallen.png"]);
 }
 vegetaChoice.onclick = function() {
-    createPlayer("Vegeta",["../imgs/vegeta/neutral.png","../imgs/vegeta/attack.png","../imgs/vegeta/fallen.png"]);
+    createPlayer("Vegeta",["dbz/imgs/vegeta/neutral.png","dbz/imgs/vegeta/attack.png","dbz/imgs/vegeta/fallen.png"]);
 }
 gohanChoice.onclick = function() {
-    createPlayer("Gohan",["../imgs/gohan/neutral.png","../imgs/gohan/attack.png","../imgs/gohan/fallen.png"]);
+    createPlayer("Gohan",["dbz/imgs/gohan/neutral.png","dbz/imgs/gohan/attack.png","dbz/imgs/gohan/fallen.png"]);
 }
 trunksChoice.onclick = function() {
-    createPlayer("Trunks",["../imgs/trunks/neutral.png","../imgs/trunks/attack.png","../imgs/trunks/fallen.png"]);
+    createPlayer("Trunks",["dbz/imgs/trunks/neutral.png","dbz/imgs/trunks/attack.png","dbz/imgs/trunks/fallen.png"]);
 }
 
 //Class for characters
@@ -235,27 +235,27 @@ function fight() {
 
     function p1Attack() {
         p1Image.setAttribute("src",p1.images[1]);
-        attackImage.setAttribute("src","../imgs/p1blast.png");
-        p2Image.setAttribute("src","../imgs/explosion.png");
+        attackImage.setAttribute("src","dbz/imgs/p1blast.png");
+        p2Image.setAttribute("src","dbz/imgs/explosion.png");
         p2.hp -= kiCollected;
         kiCollected = 0;
         setTimeout(() => {
             p1Image.setAttribute("src",p1.images[0]);
             p2Image.setAttribute("src",p2.images[0]);
-            attackImage.setAttribute("src","../imgs/transparent.png");
+            attackImage.setAttribute("src","dbz/imgs/transparent.png");
           }, "400")
     }
 
     function p2Attack() {
         p2Image.setAttribute("src",p2.images[1]);
         attackImage.setAttribute("src","../imgs/p2blast.png");
-        p1Image.setAttribute("src","../imgs/explosion.png");
+        p1Image.setAttribute("src","dbz/imgs/explosion.png");
         p1.hp -= kiCollected;
         kiCollected = 0;
         setTimeout(() => {
             p2Image.setAttribute("src",p2.images[0]);
             p1Image.setAttribute("src",p1.images[0]);
-            attackImage.setAttribute("src","../imgs/transparent.png");
+            attackImage.setAttribute("src","dbz/imgs/transparent.png");
           }, "400")
     }
 
