@@ -27,16 +27,16 @@ const gohanChoice = document.querySelector("#gohan");
 const trunksChoice = document.querySelector("#trunks");
 
 gokuChoice.onclick = function() {
-    createPlayer("Goku",["https://pgarbrecht.github.io/dbz/imgs/goku/neutral.png","https://pgarbrecht.github.io/dbz/imgs/goku/attack.png","https://pgarbrecht.github.io/dbz/imgs/goku/fallen.png"]);
+    createPlayer("Goku",["https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/goku/neutral.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/goku/attack.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/goku/fallen.png"]);
 }
 vegetaChoice.onclick = function() {
-    createPlayer("Vegeta",["https://pgarbrecht.github.io/dbz/imgs/vegeta/neutral.png","https://pgarbrecht.github.io/dbz/imgs/vegeta/attack.png","https://pgarbrecht.github.io/dbz/imgs/vegeta/fallen.png"]);
+    createPlayer("Vegeta",["https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/vegeta/neutral.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/vegeta/attack.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/vegeta/fallen.png"]);
 }
 gohanChoice.onclick = function() {
-    createPlayer("Gohan",["https://pgarbrecht.github.io/dbz/imgs/gohan/neutral.png","https://pgarbrecht.github.io/dbz/imgs/gohan/attack.png","https://pgarbrecht.github.io/dbz/imgs/gohan/fallen.png"]);
+    createPlayer("Gohan",["https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/gohan/neutral.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/gohan/attack.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/gohan/fallen.png"]);
 }
 trunksChoice.onclick = function() {
-    createPlayer("Trunks",["https://pgarbrecht.github.io/dbz/imgs/trunks/neutral.png","https://pgarbrecht.github.io/dbz/imgs/trunks/attack.png","https://pgarbrecht.github.io/dbz/imgs/trunks/fallen.png"]);
+    createPlayer("Trunks",["https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/trunks/neutral.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/trunks/attack.png","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/trunks/fallen.png"]);
 }
 
 //Class for characters
@@ -235,27 +235,27 @@ function fight() {
 
     function p1Attack() {
         p1Image.setAttribute("src",p1.images[1]);
-        attackImage.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/p1blast.png");
-        p2Image.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/explosion.png");
+        attackImage.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/p1blast.png");
+        p2Image.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/explosion.png");
         p2.hp -= kiCollected;
         kiCollected = 0;
         setTimeout(() => {
             p1Image.setAttribute("src",p1.images[0]);
             p2Image.setAttribute("src",p2.images[0]);
-            attackImage.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/transparent.png");
+            attackImage.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/transparent.png");
           }, "400")
     }
 
     function p2Attack() {
         p2Image.setAttribute("src",p2.images[1]);
-        attackImage.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/p2blast.png");
-        p1Image.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/explosion.png");
+        attackImage.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/p2blast.png");
+        p1Image.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/explosion.png");
         p1.hp -= kiCollected;
         kiCollected = 0;
         setTimeout(() => {
             p2Image.setAttribute("src",p2.images[0]);
             p1Image.setAttribute("src",p1.images[0]);
-            attackImage.setAttribute("src","https://pgarbrecht.github.io/dbz/imgs/transparent.png");
+            attackImage.setAttribute("src","https://github.com/pgarbrecht/pgarbrecht.github.io/blob/main/dbz/imgs/transparent.png");
           }, "400")
     }
 
