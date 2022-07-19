@@ -298,6 +298,17 @@ i {
   }
 
 @media only screen and (max-width: 480px) {
+    /*start new stuff*/
+    .p1-area, .p2-area {
+        width: 30vw;
+    }
+    .middle-area {
+        width: 40vw;
+    }
+    .p1-info, .p2-info, .prompt {
+        position: sticky;
+    }
+    /*end new stuff*/
     .popup .popuptext {
         color: black;
         text-align: center;
