@@ -1,0 +1,407 @@
+html { 
+    background: url(../imgs/bg.jpeg) no-repeat bottom center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+p {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+/*WELCOME SCREEN*/
+/* Popup container */
+.popup {
+    position: fixed; 
+    display:inline-flex;
+    margin-left: 15%;
+    margin-right: 85%;
+    margin-top: 750px;
+  }
+  
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 80vw;
+    height: 60vh;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    border: black solid 5px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 16px;
+}
+
+/* Toggle this class to hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+  
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.instructions {
+    padding: 0px 10px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.choose-character {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 99%;
+    margin: auto;
+}
+
+.character-item {
+    height: 225px;
+    background-size: cover;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+#goku {
+    background-image: url(../imgs/welcome/goku.png);
+}
+
+#vegeta {
+    background-image: url(../imgs/welcome/vegeta.png);
+}
+
+#gohan {
+    background-image: url(../imgs/welcome/gohan.png);
+}
+
+#trunks {
+    background-image: url(../imgs/welcome/trunks.png);
+}
+
+#vegeta, #trunks {
+    border-left: 0px;
+}
+
+#gohan, #trunks {
+    border-top: 0px;
+}
+
+/*OVERALL CONTAINER*/
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*THREE MAIN AREAS*/
+.p1-area, .middle-area, .p2-area {
+    width: 33vw;
+    height: 100vh;
+}
+
+.p1-area, .p2-area {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.p1-info, .p2-info, .prompt {
+    height: 60px;
+}
+
+.p1-info, .p2-info {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1-character, .p2-character {
+    display: flex;
+    align-items: center;
+    height: 33%;
+}
+
+.p1-character, .p2-character, .p1-info, .p2-info, .attack-image, .attack-spacer, .prompt  {
+    display: flex;
+    width: 100%;
+}
+
+.p1-spacer, .p2-spacer {
+    width: 60%;
+}
+
+.p1-image, .p2-image {
+    width: 100%;
+}
+
+/*LEFT SPECIFIC*/
+.p1-area {
+    align-items: flex-end;
+} 
+
+.p1-character {
+    justify-content: flex-end;
+}
+
+.p2-character {
+    transform: scaleX(-1) /*flips image horizontally*/
+}
+
+/*MIDDLE SPECIFIC*/
+.middle-area {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.prompt {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+i {
+    color: orange;
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.prompt-text {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#play-again-btn {
+    border-radius: 10px;
+}
+
+.attack-image {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 60%;
+}
+
+.attack-spacer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 27%;
+}
+
+.grid-container {
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+.grid-item {
+      justify-content: center;
+      align-items: center;
+  } 
+
+.ki {
+    background-image: url("/imgs/ki.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+  /*RIGHT SPECIFIC*/
+  .p2-image {
+    justify-content: flex-start;
+}
+
+/*RESPONSIVENESS*/
+@media only screen and (min-width: 2000px) {
+    .p1-image, .p2-image {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+    .p1-image, .p2-image {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+    .p1-image, .p2-image {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .popup {
+        position: fixed; 
+        display:inline-flex;
+        margin-left: 15%;
+        margin-right: 85%;
+        margin-top: 750px;
+    }
+    .choose-character {
+        width: 65%;
+    }
+    .instructions {
+        font-size: 16px;
+        margin: auto;
+    }
+    .character-item {
+        height: 190px;
+    }
+    .popup .popuptext {
+        height: 62vh;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1000px){
+    .character-item {
+        height: 175px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .popup {
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 90%; replaced this with pixel offset to center it vertically, will switch back if doesn't work on github pages*/
+        margin-top: 750px;
+    }
+    
+    .popup .popuptext {
+        width: 80vw;
+        /* height: vh; */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 20px;
+    }
+    .character-item {
+        height: 175px;
+    }
+}
+
+  @media only screen and (max-width: 700px) {
+    .popup {
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 110%; */
+        margin-top: 700px;
+    }
+    
+    .popup .popuptext {
+        width: 80vw;
+        height: 51vh;
+        text-align: center;
+        margin-left: 55px;
+        font-size: 20px;
+    }
+    .character-item {
+        height: 15vh;
+    }
+    #play-again-btn {
+        border-radius: 10px;
+        font-size: 8px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .popup {
+        /* margin-top: 120%; */
+        margin-top: 650px;
+    }
+    
+    .popup .popuptext {
+        width: 80vw;
+        height: 45vh;
+        margin-left: 45px;
+    }
+    .character-item {
+        height: 10vh;
+    }
+    .p1-info, .p2-info, .prompt {
+        height: 80px;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .popup {
+        /* margin-top: 150%; */
+        margin-top: 700px;
+    }
+    
+    .popup .popuptext {
+        width: 80vw;
+        height: 40vh;
+        color: black;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .character-item {
+        height: 10vh;
+    }
+    .p1-info, .p2-info {
+        align-items: center;
+    }
+    .p1-spacer, .p2-spacer {
+        width: 40%;
+    }
+    i {
+        font-size: 20px;
+    }
+    .prompt {
+        justify-content: center;
+    }
+    p {
+        font-size: 14px;
+    }
+
+@media only screen and (max-width: 400px) {
+    .popup {
+        /* margin-top: 125%; */
+        margin-top: 500px;
+    }
+    .popup .popuptext {
+        height: 45vh;
+        margin-left: 25px;
+    }
+    .p1-info, .p2-info, .prompt {
+        height: 60px;
+    }
+    #play-again-btn {
+        border-radius: 10px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .popup {
+        margin-top: 400px;
+    }
+    .popup .popuptext {
+        height: 55vh;
+        margin-left: 20px;
+    }
+}
