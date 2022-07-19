@@ -224,7 +224,7 @@ i {
   } 
 
 .ki {
-    background-image: url("/imgs/ki.png");
+    background-image: url("../imgs/ki.png");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
