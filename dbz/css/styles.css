@@ -338,6 +338,9 @@ i {
     .prompt {
         justify-content: center;
     }
+    .prompt-text {
+        width: 50%;
+    }
     p {
         font-size: 14px;
     }
