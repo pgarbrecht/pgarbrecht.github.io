@@ -324,6 +324,7 @@ i {
     .popup .popuptext {
         color: black;
         text-align: center;
+        margin-left: -19.5vw;
     }
     .p1-info, .p2-info {
         align-items: center;
