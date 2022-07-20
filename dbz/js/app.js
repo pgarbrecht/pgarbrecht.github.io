@@ -63,14 +63,22 @@ function createPlayer(character,images) {
     const p = new Player(character,images); 
     players.push(p);
     charactersOnscreen += 1;
-    removeWelcome();
+    removeWelcome(); //proceeds to next main function
 }
 
 //Remove the pop up once 2 players created
 function removeWelcome() {
     if (charactersOnscreen > 1) {
         popup.style.display = "none";
-        startGame();
+        //adjusts style in the prompt area for mobile
+        function mobileAdjust(mobileDevice) {
+            if (mobileDevice.matches) {
+              document.querySelector(".prompt-text").style.width = "50%";
+            }
+          }
+        const mobileDevice = window.matchMedia("(max-width: 480px)");
+        mobileAdjust(mobileDevice);
+        startGame(); //proceeds to next main function
     }
 }
 
@@ -100,7 +108,7 @@ function startGame() {
     p2Info.style.backgroundColor = "orange";
     prompt.style.backgroundColor = "white";
     promptText.textContent = `15 seconds to collect ki!`;
-    fight();
+    fight(); //proceeds to next main function
     setTimeout(() => {
         alert("Round 1: P1 will go first.");
         }, "500")
@@ -229,7 +237,7 @@ function fight() {
             });
             p2Attack();
             kiCollected = 0;
-            endGame();
+            endGame(); //proceeds to next main function
         }
     }
 
