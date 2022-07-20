@@ -252,17 +252,11 @@ i {
     .p1-image, .p2-image {
         width: 30%;
     }
-    .popup .popuptext {
-        margin-top: -5vw;
-    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1600px) {
     .p1-image, .p2-image {
         width: 40%;
-    }
-    .popup .popuptext {
-        margin-top: -7vw;
     }
 }
 
@@ -300,7 +294,6 @@ i {
     }
     .popup .popuptext {
         width: 75vw;
-        margin-top: -12vw;
         margin-left: -22.5vw;
     }
   }
@@ -325,7 +318,6 @@ i {
         color: black;
         text-align: center;
         margin-left: -19.5vw;
-        margin-top: -12.5vh;
     }
     .p1-info, .p2-info {
         align-items: center;
