@@ -70,6 +70,10 @@ p {
     border: solid 2px black;
 }
 
+.character-item:active {
+    opacity: 0.75;
+}
+
 #goku {
     background-image: url(../imgs/welcome/goku.png);
 }
@@ -223,6 +227,10 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+
+.ki:active {
+    opacity: 0.75;
 }
 
   /*RIGHT SPECIFIC*/
