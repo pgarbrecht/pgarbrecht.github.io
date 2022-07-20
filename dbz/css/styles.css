@@ -30,7 +30,7 @@ p {
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    margin-top: -9vw;
+    margin-top: -12.5vh;
     margin-left: -9vw;
     font-size: 16px;
 }
@@ -325,6 +325,7 @@ i {
         color: black;
         text-align: center;
         margin-left: -19.5vw;
+        margin-top: -12.5vh;
     }
     .p1-info, .p2-info {
         align-items: center;
