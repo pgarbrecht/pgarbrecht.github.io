@@ -307,7 +307,7 @@ i {
 
 @media only screen and (max-width: 480px) {
     html { 
-        background: url(./imgs/bg-mobile.jpeg) no-repeat bottom center fixed;
+        background: url(../imgs/bg-mobile.jpeg) no-repeat bottom center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
