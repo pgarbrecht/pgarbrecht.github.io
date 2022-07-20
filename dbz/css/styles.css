@@ -306,11 +306,20 @@ i {
   }
 
 @media only screen and (max-width: 480px) {
+    html { 
+        background: url(./imgs/bg-mobile.jpeg) no-repeat bottom center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
     .p1-area, .p2-area {
         width: 30vw;
+        height: 95vh;
     }
     .middle-area {
         width: 40vw;
+        height: 95vh;
     }
     .popup .popuptext {
         color: black;
