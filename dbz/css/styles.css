@@ -307,6 +307,7 @@ i {
     }
     .p1-info, .p2-info, .prompt {
         position: sticky;
+        align-self: flex-start;
     }
     /*end new stuff*/
     .popup .popuptext {
