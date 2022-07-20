@@ -315,11 +315,11 @@ i {
     }
     .p1-area, .p2-area {
         width: 30vw;
-        height: 95vh;
+        height: 90vh;
     }
     .middle-area {
         width: 40vw;
-        height: 95vh;
+        height: 90vh;
     }
     .popup .popuptext {
         color: black;
