@@ -111,6 +111,7 @@ function startGame() {
     fight(); //proceeds to next main function
     setTimeout(() => {
         alert("Round 1: P1 will go first.");
+        p1Name.textContent = `P1: ${p1.character} GO!`;
         }, "500")
 }
 
@@ -159,11 +160,13 @@ function fight() {
                 item.classList.remove('ki')
             });
             p1Attack();
+            p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => { //added again to prevent odd cases of ki appearing again too soon during this set timeout
                     item.classList.remove('ki')
                 });
-            alert("P2 will go next.");
+                alert("P2 will go next.");
+                p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "450")
             kiCollected = 0;
             displayTime = 15;
@@ -174,11 +177,13 @@ function fight() {
                 item.classList.remove('ki')
             });
             p2Attack();
+            p2Name.textContent = `P2: ${p2.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
                     item.classList.remove('ki')
                 });
                 alert("Round 2: P1 will go first.");
+                p1Name.textContent = `P1: ${p1.character} GO!`;
             }, "450")
             kiCollected = 0;
             displayTime = 15;
@@ -189,11 +194,13 @@ function fight() {
                 item.classList.remove('ki')
             });
             p1Attack();
+            p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
                     item.classList.remove('ki')
                 });
                 alert("P2 will go next.");
+                p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "450")
             kiCollected = 0;
             displayTime = 15;
@@ -204,11 +211,13 @@ function fight() {
                 item.classList.remove('ki')
             });
             p2Attack();
+            p2Name.textContent = `P2: ${p2.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
                     item.classList.remove('ki')
                 });
                 alert("FINAL ROUND: P1 will go first.");
+                p1Name.textContent = `P1: ${p1.character} GO!`;
             }, "450")
             kiCollected = 0;
             displayTime = 15;
@@ -219,11 +228,13 @@ function fight() {
                 item.classList.remove('ki')
             });
             p1Attack();
+            p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
                     item.classList.remove('ki')
                 });
                 alert("P2 will go next.");
+                p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "450")
             kiCollected = 0;
             displayTime = 15;
@@ -236,6 +247,7 @@ function fight() {
                 item.classList.remove('ki')
             });
             p2Attack();
+            p2Name.textContent = `P2: ${p2.character}`;
             kiCollected = 0;
             endGame(); //proceeds to next main function
         }
@@ -274,17 +286,14 @@ function fight() {
 function endGame() {
     setTimeout(() => {
     if(p1.hp > p2.hp) {
-        // promptText.textContent = "P1 is the winner!"; //add restart button
         promptText.innerHTML = '<p>P1 wins!&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again</button>';
         p2Image.setAttribute("src",p2.images[2]); 
     }
     else if(p2.hp > p1.hp) {
-        // promptText.textContent = "P2 is the winner!"; //add restart button
         promptText.innerHTML = '<p>P2 wins!&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again</button>';
         p1Image.setAttribute("src",p1.images[2]); 
     }
     else if(p1.hp == p2.hp) {
-        // promptText.textContent = "It's a tie!";
         promptText.innerHTML = '<p>Tie game!&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again</button>';
         p1Image.setAttribute("src",p1.images[2]); 
         p2Image.setAttribute("src",p2.images[2]); 
@@ -293,5 +302,5 @@ function endGame() {
 }
 
 function playAgain() {
-        location.reload();
-    }
+    location.reload();
+}
