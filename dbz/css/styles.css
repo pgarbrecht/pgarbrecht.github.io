@@ -339,7 +339,7 @@ i {
         justify-content: center;
     }
     .prompt-text {
-        width: 50%;
+        width: 0%; /*this will become 50% after pop up removes through js mobile media query, to align speaker and prompt together*/
     }
     p {
         font-size: 14px;
