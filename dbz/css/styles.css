@@ -64,7 +64,7 @@ p {
 }
 
 .character-item {
-    height: 10vh;
+    height: 12vh;
     background-size: cover;
     cursor: pointer;
     border: solid 2px black;
@@ -243,8 +243,8 @@ i {
     .p1-image, .p2-image {
         width: 20%;
     }
-    .popup .popuptext {
-        margin-top: -5vw;
+    .choose-character {
+        width: 40%;
     }
 }
 
@@ -252,21 +252,27 @@ i {
     .p1-image, .p2-image {
         width: 30%;
     }
+    .choose-character {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1600px) {
     .p1-image, .p2-image {
         width: 40%;
     }
-}
-
-@media only screen and (min-width: 1000px) {
     .choose-character {
         width: 65%;
     }
+}
+
+@media only screen and (min-width: 1000px) {
     .instructions {
         font-size: 16px;
         margin: auto;
+    }
+    .character-item {
+        height: 15vh;
     }
 }
 
@@ -274,6 +280,9 @@ i {
     .popup .popuptext {
         text-align: center;
         font-size: 20px;
+    }
+    .character-item {
+        height: 14vh;
     }
 }
 
