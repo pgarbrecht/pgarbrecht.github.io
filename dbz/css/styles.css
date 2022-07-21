@@ -39,7 +39,7 @@ p {
 .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 5s;
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
 }
   
 /* Add animation (fade in the popup) */
