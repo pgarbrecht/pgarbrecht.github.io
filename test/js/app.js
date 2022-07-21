@@ -263,7 +263,7 @@ function fight() {
             p1Image.setAttribute("src",p1.images[0]);
             p2Image.setAttribute("src",p2.images[0]);
             attackImage.setAttribute("src","./imgs/transparent.png");
-          }, "400")
+          }, "900")
     }
 
     function p2Attack() {
@@ -276,7 +276,7 @@ function fight() {
             p2Image.setAttribute("src",p2.images[0]);
             p1Image.setAttribute("src",p1.images[0]);
             attackImage.setAttribute("src","./imgs/transparent.png");
-          }, "400")
+          }, "900")
     }
 
     let countDownTimerId = setInterval(countDown, 1000);
