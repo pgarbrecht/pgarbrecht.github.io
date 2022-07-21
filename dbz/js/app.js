@@ -86,6 +86,7 @@ function removeWelcome() {
 const p1Info = document.querySelector(".p1-info");
 let p1Image = document.querySelector(".p1-image");
 const p1Name = document.querySelector(".p1-name");
+const p1Ki = document.querySelector(".p1-ki");
 
 const prompt = document.querySelector(".prompt");
 const promptText = document.querySelector(".prompt-text");
@@ -94,6 +95,7 @@ const attackImage = document.querySelector(".attack-image");
 const p2Info = document.querySelector(".p2-info");
 let p2Image = document.querySelector(".p2-image");
 const p2Name = document.querySelector(".p2-name");
+const p2Ki = document.querySelector(".p2-ki");
 
 function startGame() {
     // assign objects to player variables
@@ -155,6 +157,10 @@ function fight() {
         displayTime -= 1
         promptText.textContent = `${displayTime} seconds to collect ki!`;
         //Round 1 P1
+        if(currentTime >=76 && currentTime <= 90) {
+            p1Ki.textContent = `${kiCollected} Ki`;
+            p1Info.style.justifyContent = "space-around";
+        }
         if(currentTime == 75) {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
@@ -168,10 +174,16 @@ function fight() {
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "950")
+            p1Ki.textContent = "";
+            p1Info.style.justifyContent = "center";
             kiCollected = 0;
             displayTime = 15;
         }
         //Round 1 P2
+        if(currentTime >=61 && currentTime <= 74) {
+            p2Ki.textContent = `${kiCollected} Ki`;
+            p2Info.style.justifyContent = "space-around";
+        }
         if(currentTime == 60) {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
@@ -185,10 +197,16 @@ function fight() {
                 alert("Round 2: P1 will go first.");
                 p1Name.textContent = `P1: ${p1.character} GO!`;
             }, "950")
+            p2Ki.textContent = "";
+            p2Info.style.justifyContent = "center";
             kiCollected = 0;
             displayTime = 15;
         }
         //Round 2 P1
+        if(currentTime >=46 && currentTime <= 59) {
+            p1Ki.textContent = `${kiCollected} Ki`;
+            p1Info.style.justifyContent = "space-around";
+        }
         if(currentTime == 45) {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
@@ -202,10 +220,16 @@ function fight() {
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "950")
+            p1Ki.textContent = "";
+            p1Info.style.justifyContent = "center";
             kiCollected = 0;
             displayTime = 15;
         }
         //Round 2 P2
+        if(currentTime >=31 && currentTime <= 44) {
+            p2Ki.textContent = `${kiCollected} Ki`;
+            p2Info.style.justifyContent = "space-around";
+        }
         if(currentTime == 30) {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
@@ -219,10 +243,16 @@ function fight() {
                 alert("FINAL ROUND: P1 will go first.");
                 p1Name.textContent = `P1: ${p1.character} GO!`;
             }, "950")
+            p2Ki.textContent = "";
+            p2Info.style.justifyContent = "center";
             kiCollected = 0;
             displayTime = 15;
         }
         //Round 3 (Final) P1
+        if(currentTime >=16 && currentTime <= 29) {
+            p1Ki.textContent = `${kiCollected} Ki`;
+            p1Info.style.justifyContent = "space-around";
+        }
         if(currentTime == 15) {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
@@ -236,11 +266,17 @@ function fight() {
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
             }, "950")
+            p1Ki.textContent = "";
+            p1Info.style.justifyContent = "center";
             kiCollected = 0;
             displayTime = 15;
         }
         //Round 3 (Final) P2
-        if(currentTime == 0) {
+      if(currentTime >=1 && currentTime <= 14) {
+            p2Ki.textContent = `${kiCollected} Ki`;
+            p2Info.style.justifyContent = "space-around";
+        }  
+      if(currentTime == 0) {
             clearInterval(countDownTimerId);
             clearInterval(timerId);
             gridItems.forEach(item => {
@@ -285,6 +321,9 @@ function fight() {
 
 function endGame() {
     setTimeout(() => {
+        p1Ki.textContent = `Power Level: ${(100 - p2.hp)*100}`;
+        p2Ki.textContent = `Power Level: ${(100 - p1.hp)*100}`;
+        p1Info.style.justifyContent = "space-around";
     if(p1.hp > p2.hp) {
         promptText.innerHTML = '<p>P1 wins!&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again</button>';
         p2Image.setAttribute("src",p2.images[2]); 
