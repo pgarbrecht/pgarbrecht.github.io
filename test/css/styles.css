@@ -227,6 +227,7 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    animation: fadeIn 0.5s;
 }
 
 .ki:active {
