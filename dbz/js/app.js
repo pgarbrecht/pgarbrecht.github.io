@@ -261,8 +261,8 @@ function fight() {
         kiCollected = 0;
         setTimeout(() => {
             p1Image.setAttribute("src",p1.images[0]);
-            p2Image.setAttribute("src",p2.images[0]);
             attackImage.setAttribute("src","./imgs/transparent.png");
+            p2Image.setAttribute("src",p2.images[0]);
           }, "400")
     }
 
@@ -274,8 +274,8 @@ function fight() {
         kiCollected = 0;
         setTimeout(() => {
             p2Image.setAttribute("src",p2.images[0]);
-            p1Image.setAttribute("src",p1.images[0]);
             attackImage.setAttribute("src","./imgs/transparent.png");
+            p1Image.setAttribute("src",p1.images[0]);
           }, "400")
     }
 
