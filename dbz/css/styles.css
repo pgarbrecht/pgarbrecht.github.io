@@ -238,7 +238,9 @@ i {
 }
 
 .ki:active {
-    opacity: 0.75;
+    background-image: url("../imgs/ki-clicked.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
   /*RIGHT SPECIFIC*/
