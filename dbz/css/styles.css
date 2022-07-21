@@ -245,6 +245,9 @@ i {
     .p1-image, .p2-image {
         width: 20%;
     }
+    .p1-spacer, .p2-spacer {
+        width: 80%;
+    }
     .choose-character {
         width: 40%;
     }
@@ -253,6 +256,9 @@ i {
 @media only screen and (min-width: 1600px) and (max-width: 2000px) {
     .p1-image, .p2-image {
         width: 30%;
+    }
+    .p1-spacer, .p2-spacer {
+        width: 70%;
     }
     .choose-character {
         width: 50%;
