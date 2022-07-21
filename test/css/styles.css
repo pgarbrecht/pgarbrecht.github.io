@@ -227,9 +227,9 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    animation: kiFade 1s;
+    animation: kiFade 1s; /*NEW*/
 }
-
+/*NEW*/
 /* Add animation (fade in and out the ki quickly) */
 @-webkit-keyframes kiFade {
     0% {opacity: 0}
