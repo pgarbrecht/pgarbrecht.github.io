@@ -298,7 +298,7 @@ function endGame() {
         p1Image.setAttribute("src",p1.images[2]); 
         p2Image.setAttribute("src",p2.images[2]); 
     }
-    }, "400")
+    }, "900")
 }
 
 function playAgain() {
