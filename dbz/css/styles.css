@@ -227,14 +227,6 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    animation: kiFade 1s;
-}
-
-/* Add animation (fade in and out the ki quickly) */
-@-webkit-keyframes kiFade {
-    0% {opacity: 0}
-    50% {opacity: 1}
-    100% {opacity: 0}
 }
 
 .ki:active {
@@ -324,9 +316,6 @@ i {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }
-    .ki {
-        animation: none;
     }
     .p1-area, .p2-area {
         width: 30vw;
