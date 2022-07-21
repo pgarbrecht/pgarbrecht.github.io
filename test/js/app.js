@@ -145,7 +145,7 @@ function fight() {
     })
 
     function moveKi() {
-        timerId = setInterval(randomGridItem, 500)
+        timerId = setInterval(randomGridItem, 1000)
     }
 
     moveKi();
@@ -167,7 +167,7 @@ function fight() {
                 });
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "450")
+            }, "950")
             kiCollected = 0;
             displayTime = 15;
         }
@@ -184,7 +184,7 @@ function fight() {
                 });
                 alert("Round 2: P1 will go first.");
                 p1Name.textContent = `P1: ${p1.character} GO!`;
-            }, "450")
+            }, "950")
             kiCollected = 0;
             displayTime = 15;
         }
@@ -201,7 +201,7 @@ function fight() {
                 });
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "450")
+            }, "950")
             kiCollected = 0;
             displayTime = 15;
         }
@@ -218,7 +218,7 @@ function fight() {
                 });
                 alert("FINAL ROUND: P1 will go first.");
                 p1Name.textContent = `P1: ${p1.character} GO!`;
-            }, "450")
+            }, "950")
             kiCollected = 0;
             displayTime = 15;
         }
@@ -235,7 +235,7 @@ function fight() {
                 });
                 alert("P2 will go next.");
                 p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "450")
+            }, "950")
             kiCollected = 0;
             displayTime = 15;
         }
