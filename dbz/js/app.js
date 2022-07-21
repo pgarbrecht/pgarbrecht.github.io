@@ -48,7 +48,7 @@ class Player {
         this.character = character || ""
         this.images = images || []
         this.playerNumber = ++Player.lastPlayerNumber
-        this.hp = hp || 100
+        this.hp = hp || 10000
     }
 }
 
@@ -140,7 +140,7 @@ function fight() {
     gridItems.forEach(item => {
         item.addEventListener("mousedown", () => {
             if (item.id == hitPosition) {
-                kiCollected++;
+                kiCollected += 100;
                 hitPosition = null;
             }
         })
@@ -321,8 +321,8 @@ function fight() {
 
 function endGame() {
     setTimeout(() => {
-        p1Ki.textContent = `Power Level: ${(100 - p2.hp)*100}`;
-        p2Ki.textContent = `Power Level: ${(100 - p1.hp)*100}`;
+        p1Ki.textContent = `Power Level: ${(10000 - p2.hp)}`;
+        p2Ki.textContent = `Power Level: ${(10000 - p1.hp)}`;
         p1Info.style.justifyContent = "space-around";
     if(p1.hp > p2.hp) {
         promptText.innerHTML = '<p>P1 wins!&nbsp;</p><button id="play-again-btn" onclick="playAgain()">Play again</button>';
