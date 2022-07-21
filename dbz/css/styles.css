@@ -346,7 +346,7 @@ i {
         width: 0%; /*this will become 50% after pop up removes through js mobile media query, to align speaker and prompt together*/
     }
     p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
 @media only screen and (max-width: 400px) {
