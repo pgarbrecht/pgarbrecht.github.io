@@ -39,7 +39,24 @@ trunksChoice.onclick = function() {
     createPlayer("Trunks",["./imgs/trunks/neutral.png","./imgs/trunks/attack.png","./imgs/trunks/fallen.png"]);
 }
 
-//Class for characters
+//Elements needed once game starts
+const p1Info = document.querySelector(".p1-info");
+let p1Image = document.querySelector(".p1-image");
+const p1Name = document.querySelector(".p1-name");
+const p1Ki = document.querySelector(".p1-ki");
+
+const prompt = document.querySelector(".prompt");
+const promptText = document.querySelector(".prompt-text");
+const attackImage = document.querySelector(".attack-image");
+
+const p2Info = document.querySelector(".p2-info");
+let p2Image = document.querySelector(".p2-image");
+const p2Name = document.querySelector(".p2-name");
+const p2Ki = document.querySelector(".p2-ki");
+
+let kiCollected = 0;
+
+//Class for players
 class Player {
     //static property to remember # of players created
     static lastPlayerNumber = 0;
@@ -49,6 +66,26 @@ class Player {
         this.images = images || []
         this.playerNumber = ++Player.lastPlayerNumber
         this.hp = hp || 10000
+    }
+    attack() {
+        if(this.playerNumber == 1) {
+            p1Image.setAttribute("src",this.images[1]);
+            attackImage.setAttribute("src","../imgs/p1blast.png");
+            p2Image.setAttribute("src","../imgs/explosion.png");
+            p2.hp -= kiCollected;
+        }
+        else if(this.playerNumber == 2) {
+            p2Image.setAttribute("src",this.images[1]);
+            attackImage.setAttribute("src","../imgs/p2blast.png");
+            p1Image.setAttribute("src","../imgs/explosion.png");
+            p1.hp -= kiCollected;
+        }
+        kiCollected = 0;
+        setTimeout(() => {
+            p1Image.setAttribute("src",p1.images[0]);
+            p2Image.setAttribute("src",p2.images[0]);
+            attackImage.setAttribute("src","../imgs/transparent.png");
+        }, "950")
     }
 }
 
@@ -78,26 +115,11 @@ function removeWelcome() {
           }
         const mobileDevice = window.matchMedia("(max-width: 480px)");
         mobileAdjust(mobileDevice);
-        startGame(); //proceeds to next main function
+        loadGame(); //proceeds to next main function
     }
 }
 
-//elements needed once game starts
-const p1Info = document.querySelector(".p1-info");
-let p1Image = document.querySelector(".p1-image");
-const p1Name = document.querySelector(".p1-name");
-const p1Ki = document.querySelector(".p1-ki");
-
-const prompt = document.querySelector(".prompt");
-const promptText = document.querySelector(".prompt-text");
-const attackImage = document.querySelector(".attack-image");
-
-const p2Info = document.querySelector(".p2-info");
-let p2Image = document.querySelector(".p2-image");
-const p2Name = document.querySelector(".p2-name");
-const p2Ki = document.querySelector(".p2-ki");
-
-function startGame() {
+function loadGame() {
     // assign objects to player variables
     p1 = players[0];
     p2 = players[1];
@@ -110,22 +132,22 @@ function startGame() {
     p2Info.style.backgroundColor = "orange";
     prompt.style.backgroundColor = "white";
     promptText.textContent = `15 seconds to collect ki!`;
-    fight(); //proceeds to next main function
+    playGame(); //proceeds to next main function
     setTimeout(() => {
         alert("Round 1: P1 will go first.");
         p1Name.textContent = `P1: ${p1.character} GO!`;
         }, "500")
 }
 
-function fight() {
-    const gridItems = document.querySelectorAll(".grid-item");
-    const ki = document.querySelector(".ki");
-    let kiCollected = 0; 
-    let hitPosition;
-    let currentTime = 90;
-    let timerId = null;
-    let displayTime = 15;
-  
+//Elements needed to play the game
+const gridItems = document.querySelectorAll(".grid-item");
+const ki = document.querySelector(".ki");
+let hitPosition;
+let currentTime = 90;
+let timerId = null;
+let displayTime = 15;
+
+function playGame() {
     function randomGridItem() {
         gridItems.forEach(item => {
             item.classList.remove('ki')
@@ -165,7 +187,7 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p1Attack();
+            p1.attack();
             p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => { //added again to prevent odd cases of ki appearing again too soon during this set timeout
@@ -188,7 +210,7 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p2Attack();
+            p2.attack();
             p2Name.textContent = `P2: ${p2.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
@@ -211,7 +233,7 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p1Attack();
+            p1.attack();
             p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
@@ -234,7 +256,7 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p2Attack();
+            p2.attack();
             p2Name.textContent = `P2: ${p2.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
@@ -257,7 +279,7 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p1Attack();
+            p1.attack();
             p1Name.textContent = `P1: ${p1.character}`;
             setTimeout(() => {
                 gridItems.forEach(item => {
@@ -282,41 +304,13 @@ function fight() {
             gridItems.forEach(item => {
                 item.classList.remove('ki')
             });
-            p2Attack();
+            p2.attack();
             p2Name.textContent = `P2: ${p2.character}`;
             kiCollected = 0;
             endGame(); //proceeds to next main function
         }
     }
-
-    function p1Attack() {
-        p1Image.setAttribute("src",p1.images[1]);
-        attackImage.setAttribute("src","./imgs/p1blast.png");
-        p2Image.setAttribute("src","./imgs/explosion.png");
-        p2.hp -= kiCollected;
-        kiCollected = 0;
-        setTimeout(() => {
-            p1Image.setAttribute("src",p1.images[0]);
-            attackImage.setAttribute("src","./imgs/transparent.png");
-            p2Image.setAttribute("src",p2.images[0]);
-          }, "900")
-    }
-
-    function p2Attack() {
-        p2Image.setAttribute("src",p2.images[1]);
-        attackImage.setAttribute("src","./imgs/p2blast.png");
-        p1Image.setAttribute("src","./imgs/explosion.png");
-        p1.hp -= kiCollected;
-        kiCollected = 0;
-        setTimeout(() => {
-            p2Image.setAttribute("src",p2.images[0]);
-            attackImage.setAttribute("src","./imgs/transparent.png");
-            p1Image.setAttribute("src",p1.images[0]);
-          }, "900")
-    }
-
     let countDownTimerId = setInterval(countDown, 1000);
-
 }
 
 function endGame() {
