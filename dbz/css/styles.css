@@ -227,7 +227,7 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    animation: speedUpKi 0.250s;
+    animation: speedUpKi 0.250s; /*Shortens 1s window to click ki to 0.75 seconds*/
 }
 
 /* Add animation (delay ki appearance so game seems faster) */
@@ -374,6 +374,9 @@ i {
     .p1-ki, .p2-ki { 
         margin-top: -15px;
         text-align: center;
+    }
+    .ki {
+        animation: speedUpKi 0.50s; /*Shortens 1s window to tap ki to 0.5 seconds, since tapping is faster than clicking*/
     }
 
 @media only screen and (max-width: 400px) {
