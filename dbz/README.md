@@ -11,11 +11,11 @@ My game is called Dragon Ball Z World Tournament. It's a turn-based fighting gam
 
 ## User Stories
 MVP Goals
-• As a player, I need to choose my character and have their image be shown when playing
-• As a player, I need to see the amount of ki I collect when playing to know my progress
-• As a player, I need to be able to restart the game after winning or losing
+* As a player, I need to choose my character and have their image be shown when playing
+* As a player, I need to see the amount of ki I collect when playing to know my progress
+* As a player, I need to be able to restart the game after winning or losing
 
-Stretch Goals
-• As a player, I would also like the option to turn on or turn off music if interested
-• As a player, I would also like to see a timer showing how much time is left in the turn
-• As a player, I would also like to see my final score at the end of the game
+Extra Additions Added
+* As a player, I would also like the option to turn on or turn off music if interested
+* As a player, I would also like to see a timer showing how much time is left in the turn
+* As a player, I would also like to see my final score at the end of the game
