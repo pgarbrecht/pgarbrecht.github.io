@@ -70,21 +70,21 @@ class Player {
     attack() {
         if(this.playerNumber == 1) {
             p1Image.setAttribute("src",this.images[1]);
-            attackImage.setAttribute("src","../imgs/p1blast.png");
-            p2Image.setAttribute("src","../imgs/explosion.png");
+            attackImage.setAttribute("src","./imgs/p1blast.png");
+            p2Image.setAttribute("src","./imgs/explosion.png");
             p2.hp -= kiCollected;
         }
         else if(this.playerNumber == 2) {
             p2Image.setAttribute("src",this.images[1]);
-            attackImage.setAttribute("src","../imgs/p2blast.png");
-            p1Image.setAttribute("src","../imgs/explosion.png");
+            attackImage.setAttribute("src","./imgs/p2blast.png");
+            p1Image.setAttribute("src","./imgs/explosion.png");
             p1.hp -= kiCollected;
         }
         kiCollected = 0;
         setTimeout(() => {
             p1Image.setAttribute("src",p1.images[0]);
             p2Image.setAttribute("src",p2.images[0]);
-            attackImage.setAttribute("src","../imgs/transparent.png");
+            attackImage.setAttribute("src","./imgs/transparent.png");
         }, "950")
     }
 }
