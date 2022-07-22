@@ -227,6 +227,14 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    animation: speedUpKi 0.250s;
+}
+
+/* Add animation (delay ki appearance so game seems faster) */
+@-webkit-keyframes speedUpKi {
+    0% {visibility:hidden}
+    90% {visibility:hidden}
+    100% {visibility:visible}
 }
 
 .ki:active {
