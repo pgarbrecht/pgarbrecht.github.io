@@ -83,9 +83,9 @@ class Player {
         kiCollected = 0;
         setTimeout(() => {
             p1Image.setAttribute("src",p1.images[0]);
-            p2Image.setAttribute("src",p2.images[0]);
             attackImage.setAttribute("src","./imgs/transparent.png");
-        }, "950")
+            p2Image.setAttribute("src",p2.images[0]);
+        }, "900")
     }
 }
 
