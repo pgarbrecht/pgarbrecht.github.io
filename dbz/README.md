@@ -1,7 +1,7 @@
 # DBZ World Tournament
 
 ## Project Description
-My game is called Dragon Ball Z World Tournament. It's a turn-based, two-payer fighting game inspired from the show Dragon Ball Z in which every few years, the world's strongest fighters gather to compete in a martial arts tournament. Two players each take three 15 second turns gathering ki by clicking the image that appears randomly on the page (think whack-a-mole), and at the end of the time period, however much ki they gathered equals the power of their attack against the other player. At the end of the game, the person who dealt the most damage wins. Give it a play at my deployed URL: [DBZ World Tournament](pgarbrecht.github.io/dbz)!
+My game is called Dragon Ball Z World Tournament. It's a turn-based, two-payer fighting game inspired from the show Dragon Ball Z in which every few years, the world's strongest fighters gather to compete in a martial arts tournament. Two players each take three 15 second turns gathering ki by clicking the image that appears randomly on the page (think whack-a-mole), and at the end of the time period, however much ki they gathered equals the power of their attack against the other player. At the end of the game, the person who dealt the most damage wins. Give it a play at my [deployed URL](https://pgarbrecht.github.io/dbz)!
 
 ## Original Wire Frame
 <img src="https://imgur.com/S81tjil" alt="welcome screen wireframe">
