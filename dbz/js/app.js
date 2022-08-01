@@ -67,6 +67,16 @@ class Player {
         this.playerNumber = ++Player.lastPlayerNumber
         this.hp = hp || 10000
     }
+    playTurn() {
+        if(this.playerNumber == 1) {
+            p1Ki.textContent = `${kiCollected} Ki`;
+            p1Info.style.justifyContent = "space-around";
+        }
+        else if(this.playerNumber == 2) {
+            p2Ki.textContent = `${kiCollected} Ki`;
+            p2Info.style.justifyContent = "space-around";
+        }
+    }
     attack() {
         if(this.playerNumber == 1) {
             p1Image.setAttribute("src",this.images[1]);
@@ -86,6 +96,44 @@ class Player {
             attackImage.setAttribute("src","./imgs/transparent.png");
             p2Image.setAttribute("src",p2.images[0]);
         }, "900")
+    }
+    switchTurn() {
+        if(this.playerNumber == 1) {
+            gridItems.forEach(item => {
+                item.classList.remove('ki')
+            });
+            p1.attack();
+            p1Name.textContent = `P1: ${p1.character}`;
+            setTimeout(() => {
+                gridItems.forEach(item => { //added again to prevent odd cases of ki appearing again too soon during this set timeout
+                    item.classList.remove('ki')
+                });
+                alert("P2 will go next.");
+                p2Name.textContent = `P2: ${p2.character} GO!`;
+            }, "950")
+            p1Ki.textContent = "";
+            p1Info.style.justifyContent = "center";
+            kiCollected = 0;
+            displayTime = 15;
+        }
+        else if(this.playerNumber == 2) {
+            gridItems.forEach(item => {
+                item.classList.remove('ki')
+            });
+            p2.attack();
+            p2Name.textContent = `P2: ${p2.character}`;
+            setTimeout(() => {
+                gridItems.forEach(item => {
+                    item.classList.remove('ki')
+                });
+                alert("Round 2: P1 will go first.");
+                p1Name.textContent = `P1: ${p1.character} GO!`;
+            }, "950")
+            p2Ki.textContent = "";
+            p2Info.style.justifyContent = "center";
+            kiCollected = 0;
+            displayTime = 15;
+        }
     }
 }
 
@@ -180,123 +228,42 @@ function playGame() {
         promptText.textContent = `${displayTime} seconds to collect ki!`;
         //Round 1 P1
         if(currentTime >=76 && currentTime <= 90) {
-            p1Ki.textContent = `${kiCollected} Ki`;
-            p1Info.style.justifyContent = "space-around";
+            p1.playTurn();
         }
         if(currentTime == 75) {
-            gridItems.forEach(item => {
-                item.classList.remove('ki')
-            });
-            p1.attack();
-            p1Name.textContent = `P1: ${p1.character}`;
-            setTimeout(() => {
-                gridItems.forEach(item => { //added again to prevent odd cases of ki appearing again too soon during this set timeout
-                    item.classList.remove('ki')
-                });
-                alert("P2 will go next.");
-                p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "950")
-            p1Ki.textContent = "";
-            p1Info.style.justifyContent = "center";
-            kiCollected = 0;
-            displayTime = 15;
+            p1.switchTurn();
         }
         //Round 1 P2
         if(currentTime >=61 && currentTime <= 74) {
-            p2Ki.textContent = `${kiCollected} Ki`;
-            p2Info.style.justifyContent = "space-around";
+            p2.playTurn();
         }
         if(currentTime == 60) {
-            gridItems.forEach(item => {
-                item.classList.remove('ki')
-            });
-            p2.attack();
-            p2Name.textContent = `P2: ${p2.character}`;
-            setTimeout(() => {
-                gridItems.forEach(item => {
-                    item.classList.remove('ki')
-                });
-                alert("Round 2: P1 will go first.");
-                p1Name.textContent = `P1: ${p1.character} GO!`;
-            }, "950")
-            p2Ki.textContent = "";
-            p2Info.style.justifyContent = "center";
-            kiCollected = 0;
-            displayTime = 15;
+            p2.switchTurn();
         }
         //Round 2 P1
         if(currentTime >=46 && currentTime <= 59) {
-            p1Ki.textContent = `${kiCollected} Ki`;
-            p1Info.style.justifyContent = "space-around";
+            p1.playTurn();
         }
         if(currentTime == 45) {
-            gridItems.forEach(item => {
-                item.classList.remove('ki')
-            });
-            p1.attack();
-            p1Name.textContent = `P1: ${p1.character}`;
-            setTimeout(() => {
-                gridItems.forEach(item => {
-                    item.classList.remove('ki')
-                });
-                alert("P2 will go next.");
-                p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "950")
-            p1Ki.textContent = "";
-            p1Info.style.justifyContent = "center";
-            kiCollected = 0;
-            displayTime = 15;
+            p1.switchTurn();
         }
         //Round 2 P2
         if(currentTime >=31 && currentTime <= 44) {
-            p2Ki.textContent = `${kiCollected} Ki`;
-            p2Info.style.justifyContent = "space-around";
+            p2.playTurn();
         }
         if(currentTime == 30) {
-            gridItems.forEach(item => {
-                item.classList.remove('ki')
-            });
-            p2.attack();
-            p2Name.textContent = `P2: ${p2.character}`;
-            setTimeout(() => {
-                gridItems.forEach(item => {
-                    item.classList.remove('ki')
-                });
-                alert("FINAL ROUND: P1 will go first.");
-                p1Name.textContent = `P1: ${p1.character} GO!`;
-            }, "950")
-            p2Ki.textContent = "";
-            p2Info.style.justifyContent = "center";
-            kiCollected = 0;
-            displayTime = 15;
+            p2.switchTurn();
         }
         //Round 3 (Final) P1
         if(currentTime >=16 && currentTime <= 29) {
-            p1Ki.textContent = `${kiCollected} Ki`;
-            p1Info.style.justifyContent = "space-around";
+            p1.playTurn();
         }
         if(currentTime == 15) {
-            gridItems.forEach(item => {
-                item.classList.remove('ki')
-            });
-            p1.attack();
-            p1Name.textContent = `P1: ${p1.character}`;
-            setTimeout(() => {
-                gridItems.forEach(item => {
-                    item.classList.remove('ki')
-                });
-                alert("P2 will go next.");
-                p2Name.textContent = `P2: ${p2.character} GO!`;
-            }, "950")
-            p1Ki.textContent = "";
-            p1Info.style.justifyContent = "center";
-            kiCollected = 0;
-            displayTime = 15;
+            p1.switchTurn();
         }
         //Round 3 (Final) P2
       if(currentTime >=1 && currentTime <= 14) {
-            p2Ki.textContent = `${kiCollected} Ki`;
-            p2Info.style.justifyContent = "space-around";
+            p2.playTurn();
         }  
       if(currentTime == 0) {
             clearInterval(countDownTimerId);
