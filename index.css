@@ -55,6 +55,7 @@ body {
     -webkit-backface-visibility: hidden; /* -webkit needed for <5% of browser users as of 06/22, backface-visibility is in all new versions so won't matter when people update*/
     /*border-left: 1px solid #683D2C;*/
     height: 100%;
+    text-align: center;
 }
 
 .back {
