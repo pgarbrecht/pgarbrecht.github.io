@@ -171,7 +171,18 @@ p {
     margin-top: -5px;
     margin-left: 5px;
 }
-  
+
+/*Skills page*/
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: 7vh 7vh 7vh;
+    height: 75%;
+    width: 75%;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
@@ -255,4 +266,4 @@ button:focus {
         -webkit-backface-visibility: hidden;
         /*Hides back content for mobile*/
     }
-  }
+}
