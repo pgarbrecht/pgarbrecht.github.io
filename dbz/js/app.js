@@ -122,7 +122,12 @@ class Player {
                 gridItems.forEach(item => {
                     item.classList.remove('ki')
                 });
-                alert("Round 2: P1 will go first.");
+                if(currentTime >= 59) {
+                  alert("Round 2: P1 will go first.");
+                }
+                else if(currentTime <= 31) {
+                  alert("FINAL ROUND: P1 will go first.");
+                }
                 p1Name.textContent = `P1: ${p1.character} GO!`;
             }, "950")
             p2Ki.textContent = "";
