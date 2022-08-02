@@ -81,7 +81,7 @@ h1 {
     padding: 50px 25px 50px 25px;
 }
 
-h2, h3, p {
+h2, h3, p, ul {
     color: #5f4234;
 }
 
@@ -126,6 +126,14 @@ p {
     text-align: center;
     margin-top: -50px;
     padding: 30px;
+}
+
+.resume-btn, .skills-btn {
+    background-color: #831927;
+    color: white;
+    padding:10px;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
 /*Individual page styling*/
@@ -181,6 +189,14 @@ p {
     gap: 2vw;
     align-items: center;
     justify-content: center;
+}
+
+.skills-ul-intro {
+    margin-top: -10px;
+}
+
+.skills-btn {
+    margin-top: 15px;
 }
 
 /* Paper flip effect */
