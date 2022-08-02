@@ -168,20 +168,10 @@ p {
 }
 
 .hand {
-    margin-top: -12px;
+    margin-top: -5px;
     margin-left: 5px;
-    animation: wave 0.5s infinite;
-    animation-direction: alternate;
 }
   
-@keyframes wave {
-    0% {
-      transform: rotate(-15deg) scaleX(-1);
-    }
-    100% {
-        transform: rotate(-60deg) scaleX(-1);
-    }
-}
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
