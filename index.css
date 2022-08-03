@@ -191,6 +191,12 @@ p {
     justify-content: center;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+	.skills-grid-container {
+        grid-template-columns: 5vh 5vh 5vh 5vh;
+    }
+}
+
 .skills-ul-section {
     display: flex;
     flex-direction:column;
