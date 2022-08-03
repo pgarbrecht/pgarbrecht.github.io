@@ -220,18 +220,21 @@ p {
     margin-top: 10px;
     width: 90%;
     height: 20%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.watermark {
-
+#watermark {
+    background-image: url("index-images/watermark.png");
 }
 
-.dbz {
-
+#dbz {
+    background-image: url("index-images/dbz.png");
 }
 
-.tamagotchi {
-
+#tamagotchi {
+    background-image: url("index-images/tamagotchi.png");
 }
 
 /*Connect page*/
