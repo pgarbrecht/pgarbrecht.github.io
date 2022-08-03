@@ -128,7 +128,7 @@ p {
     padding: 30px;
 }
 
-.resume-btn, .skills-btn {
+.resume-btn, .skills-btn, .work-btn {
     background-color: #831927;
     color: white;
     padding:10px;
@@ -203,6 +203,34 @@ p {
 
 .skills-btn {
     margin-top: 25px;
+}
+
+/*Work page*/
+.project-btn {
+    color: black;
+    padding:10px;
+    border-radius: 10px;
+    border: solid 2px black;
+    margin-top: 10px;
+    width: 90%;
+    height: 20%;
+}
+
+.watermark {
+
+}
+
+.dbz {
+
+}
+
+.tamagotchi {
+
+}
+
+/*Connect page*/
+.test:hover, p:hover {
+    background-color: yellow;
 }
 
 /* Paper flip effect */
