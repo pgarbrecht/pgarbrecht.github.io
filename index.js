@@ -51,14 +51,6 @@ function closeBook(isAtBeginning) {
     }
 }
 
-// function resetZforAbout() {
-//     paper1.style.zIndex = 5;
-//     paper2.style.zIndex = 4;
-//     paper3.style.zIndex = 3;
-//     paper4.style.zIndex = 2;
-//     paper5.style.zIndex = 1;
-// }
-
 //Note: position of book after open/close may not be as expected if you switch between desktop and dev tools mobile view during session. Actual mobile or desktop users won't switch between those dimensions and will have a consistent experience.
 
 function goNextPage() {
@@ -100,9 +92,6 @@ function goPrevPage() {
                 closeBook(true);
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex = 5;
-                // setTimeout(() => { //included for edge case issue for z-index reset after returning to cover
-                //     location.reload();
-                // }, "1500")
                 break;
             case 3:
                 paper2.classList.remove("flipped");
@@ -134,44 +123,32 @@ function goAboutPage() {
         switch (currentLocation) {
             case 1:
                 openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 1;
+                goNextPage();
             case 2:
                 break;
             case 3:
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 4;
+                goPrevPage();
                 break;
             case 4:
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 4;
+                goPrevPage();
+                goPrevPage();
                 break;
             case 5:
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 4;
+                goPrevPage();
+                goPrevPage();
+                goPrevPage();
                 break;
             case 6:
                 openBook();
-                paper5.classList.remove("flipped");
-                paper5.style.zIndex = 1;
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex =4;
+                goPrevPage();
+                goPrevPage();
+                goPrevPage();
+                goPrevPage();
                 break;
             default:
                 throw new Error("unknown state");
         }
         currentLocation = 2;
-        // resetZforAbout();
     }
 }
 
@@ -180,35 +157,26 @@ function goSkillsPage() {
         switch (currentLocation) {
             case 1:
                 openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 1;
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 2;
+                goNextPage();
+                goNextPage();
                 break;
             case 2:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 2;
+                goNextPage();
                 break;
             case 3:
                 break;
             case 4:
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
+                goPrevPage();
                 break;
             case 5:
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
+                goPrevPage();
+                goPrevPage();
                 break;
             case 6:
                 openBook();
-                paper5.classList.remove("flipped");
-                paper5.style.zIndex = 1;
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
+                goPrevPage();
+                goPrevPage();
+                goPrevPage();
                 break;
             default:
                 throw new Error("unknown state");
@@ -222,34 +190,25 @@ function goWorkPage() {
         switch (currentLocation) {
             case 1:
                 openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 2;
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 3;
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
+                goNextPage();
+                goNextPage();
+                goNextPage();
                 break;
             case 2:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 3;
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
+                goNextPage();
+                goNextPage();
                 break;
             case 3:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
+                goNextPage();
                 break;
             case 4:
                 break;
             case 5:
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 3;
+                goPrevPage();
             case 6:
                 openBook();
-                paper5.classList.remove("flipped");
-                paper5.style.zIndex = 1;
-                paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
+                goPrevPage();
+                goPrevPage();
                 break;
             default:
                 throw new Error("unknown state");
@@ -263,39 +222,28 @@ function goConnectPage() {
         switch (currentLocation) {
             case 1:
                 openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 2;
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 3;
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
-                paper4.classList.add("flipped");
-                paper4.style.zIndex = 5;
+                goNextPage();
+                goNextPage();
+                goNextPage();
+                goNextPage();
                 break;
             case 2:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 3;
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
-                paper4.classList.add("flipped");
-                paper4.style.zIndex = 5;
+                goNextPage();
+                goNextPage();
+                goNextPage();
                 break;
             case 3:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
-                paper4.classList.add("flipped");
-                paper4.style.zIndex = 5;
+                goNextPage();
+                goNextPage();
                 break;
             case 4:
-                paper4.classList.add("flipped");
-                paper4.style.zIndex = 5;
+                goNextPage();
                 break;
             case 5:
                 break;
             case 6:
                 openBook();
-                paper5.classList.remove("flipped");
-                paper5.style.zIndex = 5;
+                goPrevPage();
                 break;
             default:
                 throw new Error("unknown state");
