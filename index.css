@@ -85,6 +85,10 @@ h2, h3, p, ul {
     color: #5f4234;
 }
 
+.work-ul {
+    width: 75%;
+}
+
 p {
     font-size: 1em;
     padding: 10px 0px 10px 0px;
