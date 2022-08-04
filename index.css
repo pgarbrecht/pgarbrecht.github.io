@@ -158,7 +158,7 @@ p {
     margin: -1px; /*Gives the illusion of depth by showing paper edge on front and back cover*/
 }
 
-.back-cover-message, .mobile-only-goodbye {
+.back-cover-message {
     color: lightcoral;
     font-family: 'Indie Flower', cursive;
 }
