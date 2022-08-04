@@ -81,7 +81,7 @@ h1 {
     padding: 50px 25px 50px 25px;
 }
 
-h2, h3, p, ul {
+h2, h3, p, ul, label, input {
     color: #5f4234;
 }
 
@@ -135,7 +135,7 @@ p {
     padding: 30px;
 }
 
-.resume-btn, .skills-btn, .work-btn {
+.resume-btn, .skills-btn, .work-btn, .form-btn {
     background-color: #831927;
     color: white;
     padding:10px;
@@ -245,6 +245,39 @@ p {
 }
 
 /*Connect page*/
+.connect-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+input, textarea {
+    width: 30vw;
+    margin-top: 2px;
+}
+
+label, input, textarea {
+    padding: 5px;
+}
+
+.message-box {
+    height: 10vh;
+}
+
+.connect-logo-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 15vw;
+}
+
+.connect-logo {
+    width: 30px;
+}
 
 /* Paper flip effect */
 .flipped .front,
@@ -316,6 +349,19 @@ button:focus {
     h1 {
         font-size: 22px;
         padding: 10px 5px 10px 5px;
+    }
+    .connect-form {
+        width: 50vw;
+    }
+    input, textarea {
+        width: 60vw;
+    }
+    .message-box {
+        height: 10vh;
+    }
+    .connect-logo-list {
+        justify-content: space-evenly;
+        width: 40vw;
     }
     .button-box {
         display: flex;
