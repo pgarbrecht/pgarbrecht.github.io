@@ -204,7 +204,9 @@ function goWorkPage() {
             case 4:
                 break;
             case 5:
-                goPrevPage();
+                goPrevPage(); 
+                goNextPage(); //break from pattern required
+                goNextPage();
             case 6:
                 openBook();
                 goPrevPage();
