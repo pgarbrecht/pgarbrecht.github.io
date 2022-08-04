@@ -89,16 +89,19 @@ h2, h3, p, ul {
     width: 75%;
 }
 
+p, ul, button {
+    font-size: 2vh;
+}
+
 p {
-    font-size: 1em;
     padding: 10px 0px 10px 0px;
     text-align: justify;
     text-indent: 20px;
 }
 
 @media only screen and (max-height: 400px) {
-    p {
-        font-size: 0.70em;
+    p, ul, button {
+        font-size: 0.50em;
     }
 }
 
