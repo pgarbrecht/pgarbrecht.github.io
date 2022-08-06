@@ -289,6 +289,10 @@ p {
     }
 }
 
+textarea {
+    resize: none;
+}
+
 input, textarea {
     width: 30vw;
     margin-top: 2px;
