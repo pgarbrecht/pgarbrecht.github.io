@@ -279,16 +279,10 @@ p {
     }
     input, textarea {
         margin-top: 0px;
-        height: 20px;
+        height: 25px;
     }
     label {
         margin-top: -10px;
-    }
-    .form-buttons-flexbox {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: -25px;
     }
     .connect-logo {
         margin-top: 10px;
@@ -398,6 +392,12 @@ button:focus {
         font-size: 22px;
         padding: 10px 5px 10px 5px;
     }
+    #about-page i, #skills-page i, #work-page i, #connect-page i {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 20px;
+    }
     .connect-form {
         width: 50vw;
     }
@@ -422,5 +422,47 @@ button:focus {
     * {
         -webkit-backface-visibility: hidden;
         /*Hides back content for mobile*/
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .form-buttons-flexbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -30px;
+    }
+    .form-btn, .connect-logo {
+        height: 25px;
+    }
+    .form-btn {
+        padding: 2px;
+    }
+    input, textarea {
+        margin-top: 0px;
+        height: 15px;
+    }
+    .button-box {
+        margin-top: -25px;
+    }
+    #about-page i, #skills-page i, #work-page i, #connect-page i {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    p {
+        font-size: 8px;
+        margin-bottom: -10px;
+    }
+    .resume-btn, .skills-btn, .work-btn, .form-btn {
+        padding: 2px;
+    }
+    .page-content {
+        margin-top: -30px;
     }
 }
