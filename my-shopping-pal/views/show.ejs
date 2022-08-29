@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs') %>
+    <a class="back-to-list-link" href="/items"><button class="back-to-list-btn">Back to List</button></a>    
+    <div class="show-flexbox">
+    <div class="show-name-actions-container">
+    <h1 class="show-page-item-name"> <%= item.name %> </h1>
+    &nbsp;
+    &nbsp;
+    <a href="/items/<%=item.id%>/edit">
+        <button class="edit-btn"><span id="edit-btn-icon" class="material-symbols-outlined">edit</span></button>
+    </a>
+    </div>
+    <img class="show-page-image" src="<%= item.image %>">
+    <p class="show-notes"> <%= item.notes %> </p>
+    </div>
+</body>
+</html>
