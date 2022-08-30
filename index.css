@@ -249,14 +249,20 @@ p {
 
 #watermark {
     background-image: url("index-images/watermark.png");
-}
-
-#dbz {
-    background-image: url("index-images/dbz.png");
+    background-size: cover;
+    background-position: center;
 }
 
 #my-shopping-pal {
     background-image: url("index-images/my-shopping-pal.png");
+    background-size: cover;
+    background-position: top;
+}
+
+#dbz {
+    background-image: url("index-images/dbz.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /*Connect page*/
