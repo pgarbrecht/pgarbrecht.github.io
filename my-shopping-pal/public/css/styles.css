@@ -1,4 +1,4 @@
-/*Global styling*/
+/*GLOBAL STYLING*/
 body {
     background-color: rgb(255, 253, 253);
     margin: 0px;
@@ -12,6 +12,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.index-nav-add-fixed {
+    position: sticky;
+    top: 0;
 }
 
 #cart-logo {
@@ -81,7 +86,7 @@ label {
     color: #ff8a82;
 }
 
-/*Homepage styling*/
+/*HOMEPAGE STYLING*/
 .homepage-container {
     display: flex;
     justify-content: center;
@@ -112,6 +117,7 @@ label {
     padding: 0% 10% 0% 10%;
     line-height: 24px;
     font-size: 20px;
+    text-align: center;
 }
 
 .homepage-buttons{
@@ -154,7 +160,7 @@ label {
     background-color: #c9d7fc;
 }
 
-/*Sign in + register page styling (Same)*/
+/*SIGN IN + REGISTER PAGE STYLING (Same)*/
 .signin-container, .register-container {
     display: flex;
     flex-direction: column;
@@ -181,6 +187,13 @@ label {
     color: #82A3FF;
     font-weight: 700;
     padding-bottom: 20px;
+}
+
+.signin-error-description, .register-error-description {
+    padding: 0% 10% 0% 10%;
+    line-height: 24px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .signin-title, .register-title {
@@ -210,21 +223,15 @@ label {
     background-color: #c9d7fc;
 }
 
-/*Index page styling*/
-.index-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+/*INDEX PAGE STYLING*/
 .index-item-list {
     width: 100vw;
-    height: 70vh;
     overflow-x: scroll;
     overflow-y: scroll;
     list-style: none;
     padding-left: 0;
+    margin-bottom: 100px;
+    margin-top: -8px;
 }
 
 .index-item {
@@ -232,12 +239,12 @@ label {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: -15px 0px -15px 25px;
+    margin: -5px 0px -5px 25px;
 }
 
 .index-item-text {
     color: #82A3FF;
-    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem); /*Clamp is used to make it desktop and mobile responsive without needing media queries*/
     padding-left: 15px;
 }
 
@@ -249,7 +256,9 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(255, 253, 253);
 }
 
 hr {
@@ -276,12 +285,11 @@ hr {
 .add-btn {
     margin-top: 7px;
 }
-
+ 
 #add-btn-icon {
     color: #82A3FF;
     font-size: clamp(0.5rem, 5.2vw + 0.2rem, 3.2rem);
     margin-top: -3px;
-    margin-left: 2px;
 } 
 
 /*add button default color is blue*/
@@ -356,7 +364,7 @@ hr {
     color: #ffc982;
 }
 
-/*Edit page styling*/
+/*EDIT PAGE STYLING*/
 .edit-container {
         display: flex;
         justify-content: center;
@@ -479,7 +487,7 @@ textarea {
     background-color: #ffc982;
 }
 
-/*Mobile Styling*/
+/*MOBILE STYLING*/
 @media only screen and (max-width: 480px) {
     .homepage-flexbox, .signin-flexbox, .register-flexbox {
         width: 75vw;

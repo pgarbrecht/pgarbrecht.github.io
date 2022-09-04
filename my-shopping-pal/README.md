@@ -59,6 +59,6 @@ As a shopping trip planner, I want :
 
 <hr>
 
-### Stretch Goals
+### Extra addition added
 As a shopping trip planner, I would also like : 
 - to have a user account so I can plan items on my desktop then log in again on my phone to check them off (i.e my data persists between sessions I use the app).
