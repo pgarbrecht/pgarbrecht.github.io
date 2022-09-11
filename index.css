@@ -53,7 +53,6 @@ body {
 .front {
     z-index: 1;
     -webkit-backface-visibility: hidden; /* -webkit needed for <5% of browser users as of 06/22, backface-visibility is in all new versions so won't matter when people update*/
-    /*border-left: 1px solid #683D2C;*/
     height: 100%;
     text-align: center;
 }
@@ -201,7 +200,6 @@ p {
 .skills-ul-section {
     display: flex;
     flex-direction:column;
-    /* align-items: flex-end; */
 }
 
 .skills-ul-intro {
@@ -408,7 +406,6 @@ button:focus {
 
 @media only screen and (max-width: 550px) and (max-height: 550px) {
 	p, .work-li {
-        /* font-size: 0.64em; */
         font-size: 55%;
     }
     #about-page i, #skills-page i, #work-page i, #connect-page i {
