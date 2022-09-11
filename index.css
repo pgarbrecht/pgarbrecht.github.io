@@ -426,6 +426,9 @@ button:focus {
     p, .work-li {
         font-size: 1.75vh;
     }
+    input {
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-height: 480px) {
@@ -436,10 +439,13 @@ button:focus {
         margin-top: -30px;
     }
     .form-btn, .connect-logo {
-        height: 25px;
+        height: 15px;
     }
     .form-btn {
         padding: 2px;
+    }
+    .connect-logo {
+        width: 15px;
     }
     input, textarea {
         margin-top: 0px;
@@ -499,5 +505,8 @@ button:focus {
     }
     .connect-logo {
         margin-top: 10px;
+    }
+    input {
+        margin-bottom: 10px;
     }
 }
