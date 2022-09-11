@@ -78,7 +78,7 @@ h1 {
     color: #831927;
     background-color: lightcoral;
     font-family: 'Marck Script', cursive;
-    padding: 50px 25px 50px 25px;
+    padding: 5%;
 }
 
 h2, h3, p, ul, label, input {
@@ -89,7 +89,7 @@ h2, h3, p, ul, label, input {
     width: 75%;
 }
 
-p, ul, button {
+p, ul, li, button {
     font-size: 2vh;
 }
 
@@ -97,12 +97,6 @@ p {
     padding: 10px 0px 10px 0px;
     text-align: justify;
     text-indent: 20px;
-}
-
-@media only screen and (max-height: 400px) {
-    p, ul, button {
-        font-size: 0.50em;
-    }
 }
 
 #about-page i, #skills-page i, #work-page i, #connect-page i {
@@ -219,7 +213,7 @@ p {
 .skills-ul-section {
     display: flex;
     flex-direction:column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .skills-ul-intro {
@@ -385,6 +379,13 @@ button:focus {
 }
 
 /*mobile styling*/
+
+@media only screen and (max-width: 650px) {
+    p, .work-li {
+        font-size: 0.6em;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     body {
         padding-top: 20px;
@@ -407,6 +408,9 @@ button:focus {
     }
     h2 {
         font-size: 20px;
+    }
+    p {
+        font-size: 1em;
     }
     .connect-form {
         width: 50vw;
@@ -458,6 +462,9 @@ button:focus {
     #about-page i, #skills-page i, #work-page i, #connect-page i {
         font-size: 13px;
     }
+    h1 {
+        font-size: 24px;
+    }
     h2 {
         font-size: 12px;
     }
@@ -465,9 +472,18 @@ button:focus {
         font-size: 14px;
         margin-bottom: -10px;
     }
-    p {
-        font-size: 8px;
+    .hi-hand-container {
         margin-bottom: -10px;
+    }
+    p {
+        font-size: 0.6em;
+        margin-bottom: -15px;
+    }
+    .work-ul {
+        margin-top: 10px;
+    }
+    .work-li {
+        font-size: 1.2em;
     }
     .resume-btn, .skills-btn, .work-btn, .form-btn {
         padding: 2px;
