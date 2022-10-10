@@ -239,6 +239,12 @@ p {
     background-position: top;
 }
 
+#gitripped {
+    background-image: url("index-images/gitripped.png");
+    background-size: cover;
+    background-position: top;
+}
+
 #dbz {
     background-image: url("index-images/dbz.png");
     background-size: cover;
