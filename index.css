@@ -14,6 +14,51 @@ body {
     background-color: #bf8066;
 }
 
+/* Book global styling*/
+
+/* Controller buttons */
+.button-box {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button-box i:hover {
+    color: #751d1d;
+}
+
+.button-box i {
+    font-size: 50px;
+    color: #4d0101;
+    padding: 0px 15px 0px 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#prev-btn-bookmark, #next-btn-bookmark, #about-bookmark, #skills-bookmark, #work-bookmark, #connect-bookmark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookmark-text {
+    font-size: 20px;
+    padding: 4px;
+    font-family: 'Indie Flower', cursive;
+}
+
+/*Book*/
+
 .book-buttons-flexbox {
     display: flex;
     flex-direction: column;
@@ -21,7 +66,6 @@ body {
     align-items: center;
 }
 
-/* Book global styling*/
 .book {
     position: relative;
     width: 45vw;
@@ -72,12 +116,23 @@ body {
     transform: rotateY(180deg)
 }
 
-h1 {
+.front-cover-title {
     border: 5px solid #4d0101;
     color: #831927;
     background-color: lightcoral;
     font-family: 'Marck Script', cursive;
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructions {
+    color: #4d0101;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    text-indent: 0px;
+    text-align: center;
 }
 
 h2, h3, p, ul, label, input {
@@ -302,34 +357,6 @@ label, input, textarea {
     transform: rotateY(-180deg);
 }
 
-/* Controller Buttons */
-.button-box {
-    display: flex;
-    flex-direction: row;
-}
-
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-button:focus {
-    outline: none;
-}
-
-.button-box i:hover {
-    color: #636363;
-}
-
-.button-box i {
-    font-size: 50px;
-    color: #5f4234;
-    padding: 0px 15px 0px 15px;
-    margin-top: 30px;
-}
-
 /* Paper stack order */
 #p1 {
     z-index: 5;
@@ -364,7 +391,7 @@ button:focus {
         border-left: none;
     }
     h1 {
-        font-size: 22px;
+        font-size: 26px;
         padding: 10px 5px 10px 5px;
     }
     #about-page i, #skills-page i, #work-page i, #connect-page i {
