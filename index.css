@@ -148,7 +148,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -1px; /*Gives the illusion of depth by showing paper edge on front and back cover*/
 }
 
 .back-cover-message {
