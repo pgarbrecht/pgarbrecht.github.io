@@ -1,4 +1,4 @@
-# GitRipped
+# My Shopping Pal
 ## Project Description
 A fullstack MongoDB, Express, Node, and EJS app created by Phil Garbrecht that allows users to create a list of items to buy for their shopping trip and then check off the items as they buy them at the store. Utilizes encryption (bcrypt) and authorization + and authentication (express session) to protect the user's shopping data.
 
