@@ -1,0 +1,16 @@
+.all-projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	flex-basis: 300px;
+	padding-top: 40px;
+	width: 100%;
+}
+
+.all-projects-project {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	overflow: hidden;
+}

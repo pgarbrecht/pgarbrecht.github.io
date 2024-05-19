@@ -1,0 +1,21 @@
+.contact-subtitle {
+	width: 100% !important;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.socials-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.contact-socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
