@@ -9,7 +9,6 @@ import {
 import "./styles/project.css";
 
 const Project = (props) => {
-	console.log("props are: ", props);
 	const { mediums, title, description, image, links, test } = props;
 	const getIcon = (medium) => {
 		switch (medium) {

@@ -30,19 +30,19 @@ const About = ({ refProps }) => {
 							{INFO.homepage.description}
 						</div>
 						<div className="about-socials">
-							<i class="devicon-react-original-wordmark colored"></i>
-							<i class="devicon-nextjs-original-wordmark colored"></i>
-							<i class="devicon-javascript-plain colored"></i>
-							<i class="devicon-typescript-plain colored"></i>
-							<i class="devicon-threejs-original-wordmark colored"></i>
-							<i class="devicon-html5-plain-wordmark colored"></i>
-							<i class="devicon-css3-plain-wordmark colored"></i>
-							<i class="devicon-nodejs-plain-wordmark colored"></i>
-							<i class="devicon-mongodb-plain-wordmark colored"></i>
-							<i class="devicon-azuresqldatabase-plain colored"></i>
-							<i class="devicon-python-plain-wordmark colored"></i>
-							<i class="devicon-java-plain-wordmark colored"></i>
-							<i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+							<i className="devicon-react-original-wordmark colored"></i>
+							<i className="devicon-nextjs-original-wordmark colored"></i>
+							<i className="devicon-javascript-plain colored"></i>
+							<i className="devicon-typescript-plain colored"></i>
+							<i className="devicon-threejs-original-wordmark colored"></i>
+							<i className="devicon-html5-plain-wordmark colored"></i>
+							<i className="devicon-css3-plain-wordmark colored"></i>
+							<i className="devicon-nodejs-plain-wordmark colored"></i>
+							<i className="devicon-mongodb-plain-wordmark colored"></i>
+							<i className="devicon-azuresqldatabase-plain colored"></i>
+							<i className="devicon-python-plain-wordmark colored"></i>
+							<i className="devicon-java-plain-wordmark colored"></i>
+							<i className="devicon-amazonwebservices-plain-wordmark colored"></i>
 						</div>
 					</div>
 					<div className="about-first-area-right-side">

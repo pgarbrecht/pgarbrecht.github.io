@@ -61,17 +61,17 @@
 
 @media (max-width: 600px) {
 	.navbar {
-		width: 100%;
+		width: 95%;
 	}
 
 	.nav-background {
-		width: 80%;
+		width: 95%;
 		height: 40px;
 	}
 
 	.nav-item {
 		font-weight: bold;
-		font-size: 70%;
+		font-size: 80%;
 	}
 
 	.nav-list {
