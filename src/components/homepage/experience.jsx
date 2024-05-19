@@ -3,19 +3,17 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 
-import "./styles/works.css";
+import "./styles/experience.css";
 
-const Works = ({ refProps }) => {
+const Experience = ({ refProps }) => {
 	return (
-		<div className="works" ref={refProps}>
-			<div className="section-header" id="experience">
-				Experience
-			</div>
+		<div className="experience" ref={refProps}>
+			<h2 id="experience">Experience</h2>
 			<Card
 				icon={faBriefcase}
 				title="Work"
 				body={
-					<div className="works-body">
+					<div className="experience-body">
 						<div className="work">
 							<img
 								src="./sisu-logo.jpeg"
@@ -111,4 +109,4 @@ const Works = ({ refProps }) => {
 	);
 };
 
-export default Works;
+export default Experience;

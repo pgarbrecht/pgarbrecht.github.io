@@ -61,10 +61,7 @@
 
 @media (max-width: 600px) {
 	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
+		width: 100%;
 	}
 
 	.nav-background {
@@ -74,5 +71,11 @@
 
 	.nav-item {
 		font-weight: bold;
+		font-size: 70%;
+	}
+
+	.nav-list {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }

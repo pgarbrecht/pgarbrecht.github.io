@@ -15,20 +15,21 @@ const About = ({ refProps }) => {
 
 	return (
 		<React.Fragment>
-			<div className="homepage-container" ref={refProps}>
-				<div className="homepage-first-area">
-					<div className="homepage-first-area-left-side">
-						<div className="section-header" id="about">
-							About
-						</div>
-						<div className="title homepage-title">
-							{INFO.homepage.title} with {yearsOfExperience} years of experience
+			<div className="about-container" ref={refProps}>
+				<div className="about-first-area">
+					<div className="about-first-area-left-side">
+						<div className="about-header">
+							<h1 className="title about-title">
+								{INFO.homepage.title} with {yearsOfExperience} years of
+								experience
+							</h1>
+							<h2 id="about">About</h2>
 						</div>
 
-						<div className="subtitle homepage-subtitle">
+						<div className="subtitle about-subtitle">
 							{INFO.homepage.description}
 						</div>
-						<div className="homepage-socials">
+						<div className="about-socials">
 							<i class="devicon-react-original-wordmark colored"></i>
 							<i class="devicon-nextjs-original-wordmark colored"></i>
 							<i class="devicon-javascript-plain colored"></i>
@@ -44,14 +45,10 @@ const About = ({ refProps }) => {
 							<i class="devicon-amazonwebservices-plain-wordmark colored"></i>
 						</div>
 					</div>
-					<div className="homepage-first-area-right-side">
-						<div className="homepage-image-container">
-							<div className="homepage-image-wrapper">
-								<img
-									src="portrait.jpg"
-									alt="about"
-									className="homepage-image"
-								/>
+					<div className="about-first-area-right-side">
+						<div className="about-image-container">
+							<div className="about-image-wrapper">
+								<img src="portrait.jpg" alt="about" className="about-image" />
 							</div>
 						</div>
 					</div>

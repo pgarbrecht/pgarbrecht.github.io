@@ -11,11 +11,6 @@
 	padding-top: 50px;
 }
 
-.section-header {
-	font-size: 18px;
-	color: var(--secondary-color);
-}
-
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
@@ -88,7 +83,7 @@
 	padding-top: 40px;
 }
 
-.homepage-works {
+.homepage-experience {
 	width: 100%;
 	padding-top: 30px;
 }
@@ -160,7 +155,7 @@ i:hover {
 		flex-basis: auto;
 	}
 
-	.homepage-works {
+	.homepage-experience {
 		flex-basis: auto;
 	}
 }

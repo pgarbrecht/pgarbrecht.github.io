@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
+import Experience from "../components/homepage/experience";
 import AllProjects from "../components/projects/allProjects";
 import Contact from "../components/contact/contact";
 import About from "../components/about/about";
@@ -31,7 +31,7 @@ const Homepage = () => {
 				<div className="content-wrapper">
 					<div className="homepage-container">
 						<About refProps={aboutRef} />
-						<Works refProps={experienceRef} />
+						<Experience refProps={experienceRef} />
 						<AllProjects refProps={samplesRef} />
 						<Contact refProps={contactRef} />
 						<div className="page-footer">
