@@ -60,9 +60,14 @@
 }
 
 @media screen and (max-width: 600px) {
+	.work {
+		justify-content: space-around;
+	}
+
 	.work-text-fields {
 		display: flex;
 		flex-direction: column;
-		padding-left: 5px;
+		align-items: center;
+		width: 200px;
 	}
 }

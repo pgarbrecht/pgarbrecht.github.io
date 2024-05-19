@@ -36,4 +36,12 @@
 	.contact-container {
 		flex-direction: column;
 	}
+
+	.contact-text-container {
+		width: 100%;
+	}
+
+	.contact-container {
+		align-items: flex-start;
+	}
 }
