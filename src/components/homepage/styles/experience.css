@@ -28,19 +28,19 @@
 }
 
 .work-title {
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 700;
 	color: var(--secondary-color);
 }
 
 .work-subtitle {
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--secondary-color);
 }
 
 .work-duration {
 	width: 350px;
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--tertiary-color);
 }
 
