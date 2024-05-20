@@ -23,7 +23,6 @@ const Footer = (props) => {
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li>
-							{/* <Link to="/">Home</Link> */}
 							<button
 								className="footer-nav-link-item"
 								onClick={() => scrollCallback(aboutRef)}
@@ -32,7 +31,6 @@ const Footer = (props) => {
 							</button>
 						</li>
 						<li>
-							{/* <Link to="/about">About</Link> */}
 							<button
 								className="footer-nav-link-item"
 								onClick={() => scrollCallback(experienceRef)}
@@ -41,7 +39,6 @@ const Footer = (props) => {
 							</button>
 						</li>
 						<li>
-							{/* <Link to="/projects">Projects</Link> */}
 							<button
 								className="footer-nav-link-item"
 								onClick={() => scrollCallback(samplesRef)}
@@ -50,7 +47,6 @@ const Footer = (props) => {
 							</button>
 						</li>
 						<li>
-							{/* <Link to="/contact">Contact</Link> */}
 							<button
 								className="footer-nav-link-item"
 								onClick={() => scrollCallback(contactRef)}

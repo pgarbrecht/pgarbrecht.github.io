@@ -25,12 +25,12 @@ const Socials = () => {
 					</a>
 				</div>
 				<div className="social">
-					<div>
+					<a href="tel:+1512-230-0439">
 						<div className="social-icon">
 							<FontAwesomeIcon icon={faSquarePhone} className="social-icon" />
 						</div>
-						<div className="social-text">(+1) (512) 230-0439</div>
-					</div>
+						<div className="social-text">(+1) 512-230-0439</div>
+					</a>
 				</div>
 				<div className="social">
 					<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">

@@ -55,8 +55,6 @@
 
 .project-image {
 	width: 50%;
-	/* height: 20%; */
-	/* height: 250px; */
 	object-fit: contain;
 	border-radius: 1rem;
 	box-shadow: 20px 20px 15px -12px var(--primary-color);
