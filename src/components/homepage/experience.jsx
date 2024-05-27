@@ -22,9 +22,7 @@ const Experience = ({ refProps }) => {
 							/>
 							<div className="work-text-fields">
 								<div className="work-title">Sisu</div>
-								<div className="work-subtitle">
-									Robotics Software Developer, Web & Mobile
-								</div>
+								<div className="work-subtitle">Software Developer</div>
 								<div className="work-duration">January 2023 - Present</div>
 							</div>
 						</div>
@@ -49,10 +47,8 @@ const Experience = ({ refProps }) => {
 								className="work-image"
 							/>
 							<div className="work-text-fields">
-								<div className="work-title">Watermark Insights</div>
-								<div className="work-subtitle">
-									Senior Digital Manager, Full Stack
-								</div>
+								<div className="work-title">Watermark</div>
+								<div className="work-subtitle">Senior Digital Manager</div>
 								<div className="work-duration">
 									September 2021 - January 2023
 								</div>
@@ -62,7 +58,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-image-placeholder" />
 							<div className="work-text-fields">
 								<div className="work-title"></div>
-								<div className="work-subtitle">Digital Manager, Full Stack</div>
+								<div className="work-subtitle">Digital Manager</div>
 								<div className="work-duration">
 									September 2020 - September 2021
 								</div>
@@ -77,7 +73,7 @@ const Experience = ({ refProps }) => {
 							/>
 							<div className="work-text-fields">
 								<div className="work-title">Khoros</div>
-								<div className="work-subtitle">Program Manager, Front End</div>
+								<div className="work-subtitle">Program Manager</div>
 								<div className="work-duration">
 									January 2020 - September 2020
 								</div>
@@ -87,7 +83,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-image-placeholder" />
 							<div className="work-text-fields">
 								<div className="work-title"></div>
-								<div className="work-subtitle">Content Manager, Front End</div>
+								<div className="work-subtitle">Content Manager</div>
 								<div className="work-duration">January 2019 - January 2020</div>
 							</div>
 						</div>
