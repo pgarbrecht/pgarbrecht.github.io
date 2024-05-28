@@ -88,28 +88,6 @@
 	padding-top: 30px;
 }
 
-i {
-	font-size: 36px;
-	padding-right: 4px;
-	transition: transform 0.2s;
-}
-
-i:nth-child(2) {
-	padding-left: 2px;
-}
-
-i:nth-child(3) {
-	padding: 0px 10px;
-}
-
-i:hover {
-	transform: scale(1.5);
-}
-
-.skill-badge:hover {
-	transform: scale(1.3);
-}
-
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;

@@ -53,6 +53,11 @@
 	width: 150px;
 }
 
+.work-subtitle {
+	width: 350px;
+	padding-right: 15px;
+}
+
 .work-text-fields {
 	width: 90%;
 	display: flex;
@@ -69,5 +74,10 @@
 		flex-direction: column;
 		align-items: center;
 		width: 200px;
+	}
+
+	.work-subtitle {
+		width: 150px;
+		padding-right: 0px;
 	}
 }

@@ -51,7 +51,7 @@
 .title {
 	color: var(--primary-color);
 	font-family: var(--secondary-font);
-	font-size: 45px;
+	font-size: 32px;
 	font-weight: 700;
 	width: 70%;
 }
@@ -73,7 +73,6 @@ h2 {
 	font-size: 24px;
 	color: var(--secondary-color);
 	font-weight: bold;
-	/* margin-bottom: -10px; */
 }
 
 .page-footer {

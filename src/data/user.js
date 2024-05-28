@@ -12,9 +12,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: `Phil Garbrecht, Sr. Web and Mobile Engineer`,
+		title: `Phil Garbrecht, Senior Web and Mobile Software Engineer`,
 		description:
-			"I am a Sr. Software Engineer who loves solving problems and making software to help people. I began my career in web development and have led several teams in web and mobile over the years. I have enhanced my hands-on experience with formal education in software engineering & computer science to become a well-rounded engineer.",
+			"I am a senior software engineer who loves solving problems and making software to help people. I began my career in web development and have led several teams in web and mobile over the years. I have enhanced my hands-on experience with formal education in software engineering & computer science to become a well-rounded engineer.",
 	},
 
 	about: {

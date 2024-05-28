@@ -89,17 +89,9 @@
 }
 
 i {
-	font-size: 36px;
+	font-size: 32px;
 	padding-right: 4px;
 	transition: transform 0.2s;
-}
-
-i:nth-child(2) {
-	padding-left: 2px;
-}
-
-i:nth-child(3) {
-	padding: 0px 10px;
 }
 
 i:hover {
@@ -129,6 +121,12 @@ i:hover {
 
 	.about-experience {
 		flex-basis: auto;
+	}
+
+	.about-title,
+	.about-subtitle,
+	.about-socials {
+		width: 100% !important;
 	}
 }
 
