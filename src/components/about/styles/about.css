@@ -42,6 +42,7 @@
 	height: 370px;
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 .about-image-wrapper {
@@ -101,10 +102,6 @@ i:hover {
 }
 
 @media (max-width: 1024px) {
-	.about-image-container {
-		margin-top: 25px;
-	}
-
 	.about-first-area {
 		flex-direction: column-reverse;
 	}
