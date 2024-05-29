@@ -21,7 +21,7 @@ const Experience = ({ refProps }) => {
 								className="work-image"
 							/>
 							<div className="work-text-fields">
-								<div className="work-title">Sisu</div>
+								<div className="work-title">Sisu Robotics</div>
 								<div className="work-subtitle">
 									Software Developer, Web & Mobile
 								</div>
@@ -51,7 +51,7 @@ const Experience = ({ refProps }) => {
 								className="work-image"
 							/>
 							<div className="work-text-fields">
-								<div className="work-title">Watermark</div>
+								<div className="work-title">Watermark Insights</div>
 								<div className="work-subtitle">
 									Senior Digital Manager, Web Development
 								</div>

@@ -63,7 +63,6 @@
 }
 
 .about-social-icon {
-	padding-right: 20px;
 	font-size: 25px;
 	transition: color 0.2s ease-in-out;
 	color: var(--secondary-color);
@@ -90,7 +89,6 @@
 
 i {
 	font-size: 32px;
-	padding-right: 4px;
 	transition: transform 0.2s;
 }
 
@@ -145,5 +143,9 @@ i:hover {
 
 	.about-image-wrapper img {
 		width: 100%;
+	}
+
+	i {
+		font-size: 24px;
 	}
 }
