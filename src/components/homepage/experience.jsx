@@ -23,7 +23,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-text-fields">
 								<div className="work-title">Sisu Robotics</div>
 								<div className="work-subtitle">
-									Software Developer, Web & Mobile
+									Web and Mobile Software Developer
 								</div>
 								<div className="work-duration">January 2023 - Present</div>
 							</div>
@@ -38,7 +38,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-text-fields">
 								<div className="work-title">Family Gains</div>
 								<div className="work-subtitle">
-									Founder & Lead Software Engineer, Web & Mobile
+									Founder and Lead Software Engineer
 								</div>
 								<div className="work-duration">March 2020 - Present</div>
 							</div>
@@ -52,9 +52,7 @@ const Experience = ({ refProps }) => {
 							/>
 							<div className="work-text-fields">
 								<div className="work-title">Watermark Insights</div>
-								<div className="work-subtitle">
-									Senior Digital Manager, Web Development
-								</div>
+								<div className="work-subtitle">Senior Website Manager</div>
 								<div className="work-duration">
 									September 2021 - January 2023
 								</div>
@@ -64,9 +62,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-image-placeholder" />
 							<div className="work-text-fields">
 								<div className="work-title"></div>
-								<div className="work-subtitle">
-									Digital Manager, Web Development
-								</div>
+								<div className="work-subtitle">Website Manager</div>
 								<div className="work-duration">
 									September 2020 - September 2021
 								</div>
@@ -81,9 +77,7 @@ const Experience = ({ refProps }) => {
 							/>
 							<div className="work-text-fields">
 								<div className="work-title">Khoros</div>
-								<div className="work-subtitle">
-									Program Manager, Web Development
-								</div>
+								<div className="work-subtitle">Website Program Manager</div>
 								<div className="work-duration">
 									January 2020 - September 2020
 								</div>
@@ -93,9 +87,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-image-placeholder" />
 							<div className="work-text-fields">
 								<div className="work-title"></div>
-								<div className="work-subtitle">
-									Content Manager, Web Development
-								</div>
+								<div className="work-subtitle">Website Content Manager</div>
 								<div className="work-duration">January 2019 - January 2020</div>
 							</div>
 						</div>
