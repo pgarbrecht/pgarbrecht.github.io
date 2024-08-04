@@ -22,9 +22,7 @@ const Experience = ({ refProps }) => {
 							/>
 							<div className="work-text-fields">
 								<div className="work-title">Sisu Robotics</div>
-								<div className="work-subtitle">
-									Web and Mobile Software Developer
-								</div>
+								<div className="work-subtitle">Web Software Developer</div>
 								<div className="work-duration">January 2023 - Present</div>
 							</div>
 						</div>
@@ -38,7 +36,7 @@ const Experience = ({ refProps }) => {
 							<div className="work-text-fields">
 								<div className="work-title">Family Gains</div>
 								<div className="work-subtitle">
-									Founder and Lead Software Engineer
+									Founder and Lead Web Engineer
 								</div>
 								<div className="work-duration">March 2020 - Present</div>
 							</div>
