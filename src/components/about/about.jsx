@@ -11,7 +11,7 @@ const About = ({ refProps }) => {
 
 	const currentDate = new Date();
 	let currentYear = currentDate.getFullYear();
-	const yearsOfExperience = currentYear - 2018;
+	const yearsOfExperience = currentYear - 2019;
 
 	return (
 		<React.Fragment>
@@ -20,7 +20,7 @@ const About = ({ refProps }) => {
 					<div className="about-first-area-left-side">
 						<div className="about-header">
 							<h1 className="title about-title">
-								{INFO.about.title} with {yearsOfExperience} years of experience
+								{INFO.about.title} with 5 years of experience
 							</h1>
 							<h2 id="about">About</h2>
 						</div>

@@ -12,9 +12,9 @@ const INFO = {
 	},
 
 	about: {
-		title: "Phil Garbrecht, Senior Software Engineer",
+		title: "Phil Garbrecht, Software Engineer",
 		description:
-			"I am a senior software engineer with 6 years of development experience who loves solving business problems and making software to help people. I began my career in web development and have led several web teams across stacks. I use my well-rounded experience and education in software engineering and computer science to serve as a proven senior software engineer and leader.",
+			"I am a software engineer with 5 years of development experience who loves solving business problems and making software to help people. I began my career in web development and have architected and built for web apps at scale. I use my well-rounded experience and education in software engineering and computer science to serve as a proven software engineer and leader.",
 	},
 
 	projects: [

@@ -89,17 +89,6 @@ const Experience = ({ refProps }) => {
 								<div className="work-duration">January 2019 - January 2020</div>
 							</div>
 						</div>
-						<div className="work-divider-line" />
-						<div className="work">
-							<img src="./logo.png" alt="PG logo" className="work-image" />
-							<div className="work-text-fields">
-								<div className="work-title">Self-Employed</div>
-								<div className="work-subtitle">Web Development Specialist</div>
-								<div className="work-duration">
-									September 2017 - January 2019
-								</div>
-							</div>
-						</div>
 					</div>
 				}
 			/>
