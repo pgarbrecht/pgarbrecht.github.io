@@ -51,6 +51,7 @@
 	overflow-y: scroll;
 	padding-right: 10px;
 	line-height: 25px;
+	width: 50%;
 }
 
 .project-image {
@@ -116,6 +117,7 @@
 
 	.project-description {
 		margin-right: 0px;
+		width: 100%;
 	}
 }
 

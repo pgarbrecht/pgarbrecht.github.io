@@ -32,19 +32,6 @@ const INFO = {
 			],
 		},
 		{
-			title: "Family Gains",
-			description:
-				"I am the founder of Family Gains and serve as the lead engineer for our business website and software products. Family Gains is a children’s education company that provides resources to help parents raise their kids from early age to adulthood. The business began as an online store that sold at-home learning activity kits and games. I architected the website and built the infrastructure using React.js, Tailwind, Node.js, MongoDB, and Stripe integration for checkout. An admin dashboard was built to allow broader team members to log in and easily add or edit products. The online store helped achieve 25% YoY revenue increase and it remains in use on the website while the business is in the process of expanding to software products. My current focus is on building out the learning subscription app utilizing Ruby on Rails, PostgreSQL, and AWS. This app allows kids to do many learning activities that change as they age, and allows parents to customize what subjects their kids focus on learning. There are also plans to develop an online, interactive tutoring service, along with media.",
-			mediums: ["Desktop"],
-			image: "family-gains-screenshot.png",
-			links: [
-				{
-					linkText: "View Site",
-					url: "https://www.familygains.com/",
-				},
-			],
-		},
-		{
 			title: "Watermark Insights",
 			description:
 				"I served as the team lead for the business website at Watermark Insights and contributed across the stack. Watermark Insights is a higher ed software company that provides software solutions for colleges and universities around the world to measure, report on, and improve student performance. I hired on the team and worked with direct reports and colleagues across the business to develop new features using Javascript, HTML, and CSS that made the website easier to maintain and update to achieve business objectives. Under my direction we made the website our #1 revenue source with high technical standards in all categories of web development including mobile responsiveness, accessibility, SEO, and more. Some of my favorite projects to work on for the site include redesigning the navigation menu, implementing the automated chatbot, updating the site for mobile responsiveness, migrating a newly acquired company’s website, engaging in a site redesign, and implementing reusable banners and promotional components for business campaigns. I was fortunate to receive Watermark’s Award of Excellence, given to the top 1% of employees each year, for my contributions to business success and helped lay a foundation for site reliability and performance with AWS that led to the team’s continued success.",
