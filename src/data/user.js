@@ -14,7 +14,7 @@ const INFO = {
 	about: {
 		title: "Phil Garbrecht, Software Engineer",
 		description:
-			"I am a software engineer with 5 years of development and leadership experience, known for solving business challenges. I have built scalable production applications and led development teams across varied tech stacks. I combine hands-on experience and formal education in software engineering and computer science to consistently deliver effective, reliable, and optimized solutions.",
+			"I am a software engineer with 6 years of development and leadership experience, known for solving business challenges. I have built scalable production applications and led development teams across varied tech stacks. I combine hands-on experience and formal education in software engineering and computer science to consistently deliver effective, reliable, and optimized solutions.",
 	},
 
 	projects: [
