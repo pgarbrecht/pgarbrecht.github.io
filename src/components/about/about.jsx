@@ -20,7 +20,7 @@ const About = ({ refProps }) => {
 					<div className="about-first-area-left-side">
 						<div className="about-header">
 							<h1 className="title about-title">
-								{INFO.about.title} with 5 years of experience
+								{INFO.about.title} with 6 years of experience
 							</h1>
 							<h2 id="about">About</h2>
 						</div>
