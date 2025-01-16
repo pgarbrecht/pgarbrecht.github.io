@@ -19,7 +19,7 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Sisu Lab",
+			title: "Sisu",
 			description:
 				"I serve as the lead web software engineer on the Sisu team for a React.js and Node.js based product. Sisu’s software allows filmmakers in Hollywood and around the world to easily program a robot arm with a camera on it to film complex shots. When I joined, the web app had been built by a team of web developers from an agency whom I replaced, saving the company $240,000 per year. I refactored the web app to improve code quality, performance, and responsiveness, and contributed key features including CRUD operations, a file management system, program settings, and integrations. In my free time, I also developed a cross-platform mobile app version of the product that the business took to market and achieved reduced support costs and increased user satisfaction. In between feature work, I solved critical bugs that saved the business many high value customers, set up robust unit and integration testing in a CI/CD pipeline to prevent bugs and increase release velocity, and increased documentation and standards on the team.",
 			mediums: ["Desktop", "Mobile"],
