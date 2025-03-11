@@ -35,6 +35,7 @@ const About = ({ refProps }) => {
 							<i className="devicon-nodejs-plain-wordmark colored"></i>
 							<i className="devicon-html5-plain-wordmark colored"></i>
 							<i className="devicon-css3-plain-wordmark colored"></i>
+							<i className="devicon-ruby-plain-wordmark colored"></i>
 							<i className="devicon-python-plain-wordmark colored"></i>
 							<i className="devicon-java-plain-wordmark colored"></i>
 							<i className="devicon-azuresqldatabase-plain colored"></i>
